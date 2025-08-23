@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mooniverse Toolkit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+<body>
+<div class="flex-min-h-screen">
+    <!-- Sidebar -->
+    <aside class="sidebar1">
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <a href="Index.html">
+      <img src="./assets/img/Mooniverse-Logo1.png" style="max-width: 200px; height: auto;" />
+    </a>
+  </div>
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+    <!-- PDF Menu with hoverable submenu -->
+    <div class="sidebar-menu" data-menu>
+      <button class="sidebar-menu-btn" type="button">
+        <span>PDF</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+          <li><a href="MergePDF.html" class="sidebar-submenu-link">Merge PDF</a></li>
+          <li><a href="SplitPDF.html" class="sidebar-submenu-link">Split PDF</a></li>
+          <li><a href="OrganizePDF.html" class="sidebar-submenu-link">Organize PDF</a></li>
+          <li><a href="Removepages.html" class="sidebar-submenu-link">Remove Pages</a></li>
+          <li><a href="Extractpages.html" class="sidebar-submenu-link">Extract Pages</a></li>
+          <li><a href="PDFtoJPG.html" class="sidebar-submenu-link">PDF to JPG</a></li>
+          <li><a href="PDFtoPNG.html" class="sidebar-submenu-link">PDF to PNG</a></li>
+          <li><a href="SignPDF.html" class="sidebar-submenu-link">Sign PDF</a></li>
+          <li><a href="RotatePDF.html" class="sidebar-submenu-link">Rotate PDF</a></li>
+          <li><a href="Addpagenumbers.html" class="sidebar-submenu-link">Add Page Numbers</a></li>
+          <li><a href="ProtectPDF.html" class="sidebar-submenu-link">Protect PDF</a></li>
+          <li><a href="EXIFdata.html" class="sidebar-submenu-link">Remove EXIF Data</a></li>
+        </ul>
+      </div>
+    </div>
+     <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Image</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="Compressimage.html" class="sidebar-submenu-link">Compress Image</a></li>
+              <li><a href="Resizeimage.html" class="sidebar-submenu-link">Resize Image</a></li>
+              <li><a href="Cropimage.html" class="sidebar-submenu-link">Crop Image</a></li>
+              <li><a href="ConverttoJPG.html" class="sidebar-submenu-link">Convert to JPG</a></li>
+              <li><a href="JPGtoPDF.html" class="sidebar-submenu-link">JPG to PDF</a></li>
+              <li><a href="JPGtoPNG.html" class="sidebar-submenu-link">JPG to PNG</a></li>
+              <li><a href="UpscaleImage.html" class="sidebar-submenu-link">Upscale Image</a></li>
+              <li><a href="RotateImage.html" class="sidebar-submenu-link">Rotate Image</a></li>
+
+              <li><a href="HtmltoImage.html" class="sidebar-submenu-link">HTML to Image</a></li>
+              <li><a href="WatermarkRemoverImage.html" class="sidebar-submenu-link">Watermark Image</a></li>
+              <li><a href="Blurimage.html" class="sidebar-submenu-link">Blur Image</a></li>
+              <li><a href="PhotoEditor.html" class="sidebar-submenu-link">Photo Editor</a></li>
+              <li><a href="Bgremove.html" class="sidebar-submenu-link">Remove Background</a></li>
+              <li><a href="MemeGenerator.html" class="sidebar-submenu-link">Meme Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+    <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Viewer</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="JsonViewer.html" class="sidebar-submenu-link">JSON Viewer & Formatter</a></li>
+              <li><a href="CSVtotext.html" class="sidebar-submenu-link">CSV to Text</a></li>
+              <li><a href="VCFtotext.html" class="sidebar-submenu-link">VCF to Text</a></li>
+              <li><a href="VCFtoExcel.html" class="sidebar-submenu-link">VCF to Excel</a></li>
+               <li><a href="Textcompare.html" class="sidebar-submenu-link">Text Compare</a></li>
+        </ul>
+      </div>
+      </div>
+
+       <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Calculator</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="GSTCalculator.html" class="sidebar-submenu-link">GST Calculator - India</a></li>
+              <li><a href="TaxCalculator.html" class="sidebar-submenu-link">Tax Calculator</a></li>
+              <li><a href="LoanEMIcalculator.html" class="sidebar-submenu-link">Loan EMI Calculator</a></li>
+              <li><a href="PersonalLoancalculator.html" class="sidebar-submenu-link">Personal Loan Calculator</a></li>
+
+               <li><a href="ScientificCalculator.html" class="sidebar-submenu-link">Scientific Calculator</a></li>
+              <li><a href="PercentageCalculator.html" class="sidebar-submenu-link">Percentage Calculator</a></li>
+              <li><a href="CurrencyCalculator.html" class="sidebar-submenu-link">Currency Calculator</a></li>
+              <li><a href="Agecalculator.html" class="sidebar-submenu-link">Age Calculator</a></li>
+
+               <li><a href="TimeCalculator.html" class="sidebar-submenu-link">Time Calculator</a></li>
+              <li><a href="TimeDurationCalculator.html" class="sidebar-submenu-link">Time Duration Calculator</a></li>
+              <li><a href="ElectricityCalculator.html" class="sidebar-submenu-link">Electricity Calculator</a></li>
+              <li><a href="WeightCalculator.html" class="sidebar-submenu-link">Weight Calculator</a></li>
+
+              <li><a href="TimeZoneCalculator.html" class="sidebar-submenu-link">Time Zone Calculator</a></li>
+              <li><a href="ProbabilityCalculator.html" class="sidebar-submenu-link">Probability Calculator</a></li>
+        </ul>
+      </div>
+      </div>
+
+ <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>SEO</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="WordCounter.html" class="sidebar-submenu-link">Word counter</a></li>
+              <li><a href="FaviconGenerator.html" class="sidebar-submenu-link">Favicon generator</a></li>
+              <li><a href="SitemapGenerator.html" class="sidebar-submenu-link">Sitemap Generator</a></li>
+              <li><a href="RobotstxtGenerator.html" class="sidebar-submenu-link">Robots.txt Generator</a></li>
+
+              <li><a href="MetaTagGenerator.html" class="sidebar-submenu-link">Meta Tag Generator</a></li>
+              <li><a href="HtaccessGenerator.html" class="sidebar-submenu-link">.htaccess Generator</a></li>
+              <li><a href="StructuredDataGenerator.html" class="sidebar-submenu-link">Structured Data Generator</a></li>
+              <li><a href="OGtagsGenerator.html" class="sidebar-submenu-link">OG Tags Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Converters</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="Mp4toMp3.html" class="sidebar-submenu-link">MP4 to MP3</a></li>
+              <li><a href="WordtoPdf.html" class="sidebar-submenu-link">word to PDF</a></li>
+              <li><a href="XmltoJson.html" class="sidebar-submenu-link">XML to JSON</a></li>
+              <li><a href="JsontoXml.html" class="sidebar-submenu-link">JSON to XML</a></li>
+
+                <li><a href="JsontoCsv.html" class="sidebar-submenu-link">JSON to CSV</a></li>
+              <li><a href="JsontoExcel.html" class="sidebar-submenu-link">JSON to Excel</a></li>
+              <li><a href="TexttoHtml.html" class="sidebar-submenu-link">Text to HTMl</a></li>
+              <li><a href="PpttoPdf.html" class="sidebar-submenu-link">Powerpoint to PDF</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Downloader</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu1" data-submenu>
+        <ul class="sidebar-submenu-list1 sidebar-submenu1-grid3">
+          <li><a href="InstaReels.html" class="sidebar-submenu-link1">Instagram Reels Downloader</a></li>
+              <li><a href="YoutubeVideoDownloader.html" class="sidebar-submenu-link1">Youtube Videos Downloader</a></li>
+              <li><a href="InstaPost.html" class="sidebar-submenu-link1">Instagram Post Downloader</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Minifier</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+           <li><a href="Htmlminifier.html" class="sidebar-submenu-link">HTML Minifier</a></li>
+              <li><a href="Cssminifier.html" class="sidebar-submenu-link">CSS Minifier</a></li>
+              <li><a href="JsMinifier.html" class="sidebar-submenu-link">JS Minifier</a></li>
+              <li><a href="HtmlUnminifier.html" class="sidebar-submenu-link">HTML Unminifier</a></li>
+               <li><a href="Cssunminifier.html" class="sidebar-submenu-link">CSS Unminifier</a></li>
+              <li><a href="JsUnminifier.html" class="sidebar-submenu-link">JS Unminifier</a></li>
+        </ul>
+      </div>
+      </div>
+
+  </nav>
+</aside>
+
+    <!-- Main Content -->
+  <main class="main-content1 flex-1 p-12">
+    
+<div class="tool-card2 mx-auto p-0 max-w-xl">
+    <div class="tool-header2 mb-6">
+        <h2 class="font-bold text-3xl mb-2 text-green-700">Crop Image</h2>
+        <p class="text-gray-500">Select an image (JPG, PNG, WebP), draw a crop area or enter dimensions, then crop. No upload required! </p>
+    </div>
+    <div x-data="cropImageTool()" class="w-full">
+        <div 
+            class="drop-area2 mb-4" 
+            :class="{'active': isDragging}"
+            @dragover.prevent="isDragging = true"
+            @dragleave.prevent="isDragging = false"
+            @drop.prevent="handleDrop($event)"
+            x-show="!imageLoaded"
+        >
+            <div class="flex flex-col items-center justify-center">
+                <span class="emoji-icon">⬆️</span> 
+                <span class="text-gray-500" x-text="isDragging ? 'Drop image here...' : 'Drag & drop an image here'"></span>
+            </div>
+        </div>
+
+        <div 
+        class="flex justify-center gap-2 mb-4" x-show="!imageLoaded">
+            <button class="butn" type="button" @click="triggerBrowse()">📁 Browse File</button>
+        </div>
+        
+        <input type="file" accept="image/jpeg, image/png, image/webp" class="hidden" x-ref="fileInput" @change="handleFileChange($event)">
+
+        <div id="image-preview-area" x-show="imageLoaded" style="display:none;">
+            <p class="text-sm text-gray-600 mb-2 text-center">Click and drag on the image to select crop area, or use input fields below. Dimensions are for the original image. </p>
+            <div id="canvas-container-cropper">
+                <canvas x-ref="imageCanvas"></canvas>
+            </div>
+
+           <div class="crop-options">
+  <h3>Crop Options</h3>
+  <div class="crop-grid">
+    <div class="crop-field">
+      <label>Width (px)</label>
+      <input type="number" x-model="cropWidth">
+    </div>
+    <div class="crop-field">
+      <label>Height (px)</label>
+      <input type="number" x-model="cropHeight">
+    </div>
+    <div class="crop-field">
+      <label>Position X (px)</label>
+      <input type="number" x-model="cropX">
+    </div>
+    <div class="crop-field">
+      <label>Position Y (px)</label>
+      <input type="number" x-model="cropY">
+    </div>
+  </div>
+</div>
+
+            <div class="text-center">
+                <button class="butn6 btn-secondary1 w-full sm:w-auto" @click="performCrop()" :disabled="processing">
+                    <i class="fas fa-crop-alt"></i> <span x-text="processing ? 'Cropping...' : 'Crop Selected Image'"></span>
+                </button>
+                <button class="butn btn-light w-full sm:w-auto mt-2 sm:ml-2 sm:mt-0" @click="resetTool()">
+                   Change Image
+                </button>
+            </div>
+        
+        </div>
+        
+        <template x-if="croppedFileUrl">
+            <div class="mt-6">
+                <div class="mb-2 font-semibold">Download cropped image:</div>
+                <div class="p-3 border border-gray-200 rounded-md bg-gray-50">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+   
+                        <span x-text="croppedFileName" class="font-medium text-gray-800 truncate"></span>
+                        <a :href="croppedFileUrl" :download="croppedFileName" class="btn btn-cloud text-sm py-1.5 px-3 self-start sm:self-center">
+                             Download Cropped Image
+           
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template x-if="error">
+            <div class="mt-4 text-red-600 text-sm" x-text="error"></div>
+      
+        </template>
+    </div>
+</div>
+
+<div class="tool-footer">
+  <div class="footer-buttons">
+    <a href="Compressimage.html" class="footer-btn"> Compress Image </a>
+    <a href="Resizeimage.html" class="footer-btn"> Resize Image </a>
+    <a href="ConverttoJPG.html" class="footer-btn"> Convert to JPG</a>
+    <a href="JPGtoPDF.html" class="footer-btn"> JPG to PDF</a>
+    <a href="JPGtoPNG.html" class="footer-btn"> JPG to PNG</a>
+    <a href="UpscaleImage.html" class="footer-btn"> Upscale Image</a>
+    <a href="RotateImage.html" class="footer-btn"> Rotate Image</a>
+    <a href="HtmltoImage.html" class="footer-btn"> HTML to Image</a>
+    <a href="WatermarkRemoverImage.html" class="footer-btn"> Watermark Image</a>
+    <a href="Blurimage.html" class="footer-btn"> Blur Image</a>
+    <a href="PhotoEditor.html" class="footer-btn"> Photo Editor</a>
+    <a href="Bgremove.html" class="footer-btn"> Remove Background</a>
+    <a href="MemeGenerator.html" class="footer-btn"> Meme Generator</a>
+    </div>
+</div>
+    <script defer src="assets/js/alpine.min.js"></script>
+    <script defer src="assets/js/jszip.min.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('cropImageTool', () => ({
+            isDragging: false,
+            imageLoaded: false,
+            originalImage: null,
+            currentFile: null,
+            previewScale: 1,
+            processing: false,
+            error: '',
+
+            cropX: 0,
+            cropY: 0,
+            cropWidth: 0,
+            cropHeight: 0,
+
+            croppedFileUrl: null,
+            croppedFileName: '',
+
+            // Canvas drawing and interaction state
+            canvas: null,
+            ctx: null,
+            isDrawingNewCrop: false,
+            isDraggingCropRect: false,
+            isResizingCropRect: false,
+            cropStartCanvasX: 0,
+            cropStartCanvasY: 0,
+            cropRectDragOffsetX: 0,
+            cropRectDragOffsetY: 0,
+            currentCropRectCanvas: null,
+            HANDLE_SIZE: 8,
+            MAX_PREVIEW_WIDTH: Math.min(500, window.innerWidth - 60),
+            MAX_PREVIEW_HEIGHT: 400,
+
+            init() {
+                this.canvas = this.$refs.imageCanvas;
+                this.ctx = this.canvas.getContext('2d');
+
+                this.canvas.addEventListener('mousedown', this.handleCanvasMouseDown.bind(this));
+                this.canvas.addEventListener('mousemove', this.handleCanvasMouseMove.bind(this));
+                window.addEventListener('mouseup', this.handleCanvasMouseUp.bind(this));
+                this.canvas.addEventListener('touchstart', (e) => { e.preventDefault(); this.handleCanvasMouseDown(e.touches[0]); });
+                this.canvas.addEventListener('touchmove', (e) => { e.preventDefault(); this.handleCanvasMouseMove(e.touches[0]); });
+                window.addEventListener('touchend', this.handleCanvasMouseUp.bind(this));
+            },
+
+            triggerBrowse() {
+                this.$refs.fileInput.click();
+            },
+
+            handleDrop(event) {
+                this.isDragging = false;
+                if (event.dataTransfer.files && event.dataTransfer.files.length > 0) {
+                    this.handleFile(event.dataTransfer.files[0]);
+                }
+            },
+
+            handleFileChange(event) {
+                if (event.target.files && event.target.files.length > 0) {
+                    this.handleFile(event.target.files[0]);
+                    event.target.value = ''; 
+                }
+            },
+
+            handleFile(file) {
+                this.error = '';
+                this.croppedFileUrl = null;
+                this.croppedFileName = '';
+                if (!file.type.startsWith('image/')) {
+                    this.error = 'Please select an image file (JPG, PNG, WebP).';
+                    this.resetState();
+                    return;
+                }
+                this.currentFile = file;
+                this.loadImageForPreview(file);
+            },
+
+            resetState() {
+                this.imageLoaded = false;
+                this.originalImage = null;
+                this.currentFile = null;
+                this.previewScale = 1;
+                this.processing = false;
+                this.error = '';
+                this.cropX = 0;
+                this.cropY = 0;
+                this.cropWidth = 0;
+                this.cropHeight = 0;
+                this.croppedFileUrl = null;
+                this.croppedFileName = '';
+                this.currentCropRectCanvas = null;
+                this.canvas.width = 0;
+                this.canvas.height = 0;
+                this.isDrawingNewCrop = false;
+                this.isDraggingCropRect = false;
+                this.isResizingCropRect = false;
+            },
+
+            resetTool() {
+                this.resetState();
+      
+                if (this.$refs.fileInput) {
+                    this.$refs.fileInput.value = '';
+                }
+            },
+
+            loadImageForPreview(file) {
+                this.processing = true;
+                const reader = new FileReader();
+                reader.onload = (e_reader) => {
+                    this.originalImage = new Image();
+                    this.originalImage.onload = () => {
+                        this.processing = false;
+                        this.imageLoaded = true;
+
+                        const scaleX = this.MAX_PREVIEW_WIDTH / this.originalImage.naturalWidth;
+                        const scaleY = this.MAX_PREVIEW_HEIGHT / this.originalImage.naturalHeight;
+                        this.previewScale = Math.min(scaleX, scaleY, 1);
+                        this.canvas.width = this.originalImage.naturalWidth * this.previewScale;
+                        this.canvas.height = this.originalImage.naturalHeight * this.previewScale;
+       
+                        const defaultCropPercentage = 0.80;
+                        let defaultCropOrigWidth, defaultCropOrigHeight;
+
+                        if (this.originalImage.naturalWidth < this.originalImage.naturalHeight) {
+                            defaultCropOrigWidth = this.originalImage.naturalWidth * defaultCropPercentage;
+                            defaultCropOrigHeight = defaultCropOrigWidth; 
+                        } else {
+                            defaultCropOrigHeight = this.originalImage.naturalHeight * defaultCropPercentage;
+                            defaultCropOrigWidth = defaultCropOrigHeight;
+                        }
+                        
+                        defaultCropOrigWidth = Math.max(10, defaultCropOrigWidth);
+                        defaultCropOrigHeight = Math.max(10, defaultCropOrigHeight);
+
+                        const defaultCropOrigX = Math.max(0, (this.originalImage.naturalWidth - defaultCropOrigWidth) / 2);
+                        const defaultCropOrigY = Math.max(0, (this.originalImage.naturalHeight - defaultCropOrigHeight) / 2);
+
+                        this.currentCropRectCanvas = {
+                            x: defaultCropOrigX * this.previewScale,
+                            y: defaultCropOrigY * this.previewScale,
+                           
+                            width: defaultCropOrigWidth * this.previewScale,
+                            height: defaultCropOrigHeight * this.previewScale
+                        };
+                        this.updateInputsFromCropRect();
+                        
+                        this.redrawCanvas();
+                    };
+                    this.originalImage.onerror = () => { 
+                        this.error = 'Failed to load image. It might be corrupted.'; 
+                        this.processing = false;
+                        this.resetState(); 
+                    };
+                    this.originalImage.src = e_reader.target.result;
+                };
+                reader.onerror = () => { 
+                    this.error = 'Failed to read file.';
+                    this.processing = false;
+                    this.resetState(); 
+                };
+                reader.readAsDataURL(file);
+            },
+
+            redrawCanvas() {
+                if (!this.originalImage) return;
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                this.ctx.drawImage(this.originalImage, 0, 0, this.canvas.width, this.canvas.height);
+
+                if (this.currentCropRectCanvas && this.currentCropRectCanvas.width > 0 && this.currentCropRectCanvas.height > 0) {
+            
+                    this.ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+                    this.ctx.fillRect(0, 0, this.canvas.width, this.currentCropRectCanvas.y);
+                    this.ctx.fillRect(0, this.currentCropRectCanvas.y + this.currentCropRectCanvas.height, this.canvas.width, this.canvas.height - (this.currentCropRectCanvas.y + this.currentCropRectCanvas.height));
+                 
+                    this.ctx.fillRect(0, this.currentCropRectCanvas.y, this.currentCropRectCanvas.x, this.currentCropRectCanvas.height);
+                   
+                    this.ctx.fillRect(this.currentCropRectCanvas.x + this.currentCropRectCanvas.width, this.currentCropRectCanvas.y, this.canvas.width - (this.currentCropRectCanvas.x + this.currentCropRectCanvas.width), this.currentCropRectCanvas.height);
+               
+
+                   
+                    this.ctx.strokeStyle = '#10B981';
+                 
+                    this.ctx.lineWidth = 2;
+                    this.ctx.setLineDash([4, 2]); 
+                    this.ctx.strokeRect(this.currentCropRectCanvas.x, this.currentCropRectCanvas.y, this.currentCropRectCanvas.width, this.currentCropRectCanvas.height);
+                    this.ctx.setLineDash([]); 
+
+                  
+                    this.ctx.fillStyle = '#10B981';
+                    this.ctx.fillRect(
+                        this.currentCropRectCanvas.x + this.currentCropRectCanvas.width - this.HANDLE_SIZE / 2,
+                        this.currentCropRectCanvas.y + this.currentCropRectCanvas.height - this.HANDLE_SIZE / 2,
+                        this.HANDLE_SIZE,
+                
+                        this.HANDLE_SIZE
+                    );
+                }
+            },
+
+            getCanvasMousePos(e_or_touch) {
+                const rect = this.canvas.getBoundingClientRect();
+                const x = e_or_touch.clientX - rect.left;
+                const y = e_or_touch.clientY - rect.top;
+                return { 
+                    x: Math.max(0, Math.min(x, this.canvas.width)), 
+                    y: Math.max(0, Math.min(y, this.canvas.height)) 
+                };
+            },
+
+            handleCanvasMouseDown(e_or_touch) {
+                if (!this.originalImage) return;
+                const pos = this.getCanvasMousePos(e_or_touch);
+
+                if (this.currentCropRectCanvas) {
+                    const brHandleX = this.currentCropRectCanvas.x + this.currentCropRectCanvas.width;
+                    const brHandleY = this.currentCropRectCanvas.y + this.currentCropRectCanvas.height;
+
+                    if (pos.x >= brHandleX - this.HANDLE_SIZE && pos.x <= brHandleX + this.HANDLE_SIZE &&
+                        pos.y >= brHandleY - this.HANDLE_SIZE && pos.y <= brHandleY + this.HANDLE_SIZE) {
+                    
+                        this.isResizingCropRect = true;
+                        this.isDrawingNewCrop = false;
+                        this.isDraggingCropRect = false;
+                        this.cropStartCanvasX = this.currentCropRectCanvas.x;
+                
+                        this.cropStartCanvasY = this.currentCropRectCanvas.y;
+                     
+                        return;
+                    }
+
+           
+                    if (pos.x >= this.currentCropRectCanvas.x && pos.x <= this.currentCropRectCanvas.x + this.currentCropRectCanvas.width &&
+                        pos.y >= this.currentCropRectCanvas.y && pos.y <= this.currentCropRectCanvas.y + this.currentCropRectCanvas.height) {
+       
+                        this.isDraggingCropRect = true;
+                        this.isDrawingNewCrop = false;
+                        this.isResizingCropRect = false;
+                        this.cropRectDragOffsetX = pos.x - this.currentCropRectCanvas.x;
+                        this.cropRectDragOffsetY = pos.y - this.currentCropRectCanvas.y;
+                        return;
+                    }
+                }
+
+           
+                this.isDrawingNewCrop = true;
+                this.isDraggingCropRect = false;
+                this.isResizingCropRect = false;
+                this.cropStartCanvasX = pos.x;
+                this.cropStartCanvasY = pos.y;
+                this.currentCropRectCanvas = { x: pos.x, y: pos.y, width: 0, height: 0 };
+                this.redrawCanvas();
+            },
+
+            handleCanvasMouseMove(e_or_touch) {
+                if (!this.originalImage) return;
+                const pos = this.getCanvasMousePos(e_or_touch);
+
+          
+                let cursorStyle = 'crosshair';
+                if (this.currentCropRectCanvas) {
+                    const brHandleX = this.currentCropRectCanvas.x + this.currentCropRectCanvas.width;
+                    const brHandleY = this.currentCropRectCanvas.y + this.currentCropRectCanvas.height;
+                    if (pos.x >= brHandleX - this.HANDLE_SIZE && pos.x <= brHandleX + this.HANDLE_SIZE &&
+                        pos.y >= brHandleY - this.HANDLE_SIZE && pos.y <= brHandleY + this.HANDLE_SIZE) {
+                        cursorStyle = 'nwse-resize';
+                    } else if (pos.x >= this.currentCropRectCanvas.x && pos.x <= this.currentCropRectCanvas.x + this.currentCropRectCanvas.width &&
+                               pos.y >= this.currentCropRectCanvas.y && pos.y <= this.currentCropRectCanvas.y + this.currentCropRectCanvas.height) {
+                        cursorStyle = 'move';
+                    }
+                }
+                this.canvas.style.cursor = cursorStyle;
+                if (this.isDrawingNewCrop) {
+                    let width = pos.x - this.cropStartCanvasX;
+                    let height = pos.y - this.cropStartCanvasY;
+                    let x = this.cropStartCanvasX;
+                    let y = this.cropStartCanvasY;
+                    if (width < 0) { x = pos.x; width = Math.abs(width);
+                    }
+                    if (height < 0) { y = pos.y;
+                    height = Math.abs(height); }
+
+                    this.currentCropRectCanvas = { 
+                        x: Math.max(0, x), 
+                        y: Math.max(0, y), 
+                    
+                        width: Math.min(width, this.canvas.width - Math.max(0, x)), 
+                        height: Math.min(height, this.canvas.height - Math.max(0, y))
+                    };
+                    this.redrawCanvas();
+                } else if (this.isDraggingCropRect && this.currentCropRectCanvas) {
+                    let newX = pos.x - this.cropRectDragOffsetX;
+                    let newY = pos.y - this.cropRectDragOffsetY;
+
+            
+                    newX = Math.max(0, Math.min(newX, this.canvas.width - this.currentCropRectCanvas.width));
+                    newY = Math.max(0, Math.min(newY, this.canvas.height - this.currentCropRectCanvas.height));
+                    
+                    this.currentCropRectCanvas.x = newX;
+                    this.currentCropRectCanvas.y = newY;
+                    this.redrawCanvas();
+                } else if (this.isResizingCropRect && this.currentCropRectCanvas) {
+                    let newWidth = pos.x - this.currentCropRectCanvas.x;
+                    let newHeight = pos.y - this.currentCropRectCanvas.y;
+                    
+             
+                    this.currentCropRectCanvas.width = Math.max(this.HANDLE_SIZE, Math.min(newWidth, this.canvas.width - this.currentCropRectCanvas.x));
+                    this.currentCropRectCanvas.height = Math.max(this.HANDLE_SIZE, Math.min(newHeight, this.canvas.height - this.currentCropRectCanvas.y));
+                    this.redrawCanvas();
+                }
+            },
+
+            handleCanvasMouseUp() {
+                if (this.isDrawingNewCrop || this.isDraggingCropRect || this.isResizingCropRect) {
+                    this.isDrawingNewCrop = false;
+                    this.isDraggingCropRect = false;
+                    this.isResizingCropRect = false;
+
+                  
+                    if (this.currentCropRectCanvas && (this.currentCropRectCanvas.width < this.HANDLE_SIZE || this.currentCropRectCanvas.height < this.HANDLE_SIZE)) {
+                        this.currentCropRectCanvas = null;
+                        this.clearCropInputs();
+                    }
+                    this.updateInputsFromCropRect();
+                    this.redrawCanvas(); 
+                }
+            },
+
+            updateInputsFromCropRect() {
+                if (!this.currentCropRectCanvas || !this.originalImage) {
+                    this.clearCropInputs();
+                    return;
+                }
+                this.cropX = Math.max(0, Math.round(this.currentCropRectCanvas.x / this.previewScale));
+                this.cropY = Math.max(0, Math.round(this.currentCropRectCanvas.y / this.previewScale));
+                this.cropWidth = Math.max(1, Math.round(this.currentCropRectCanvas.width / this.previewScale));
+                this.cropHeight = Math.max(1, Math.round(this.currentCropRectCanvas.height / this.previewScale));
+            },
+
+            clearCropInputs() {
+                this.cropX = 0;
+                this.cropY = 0;
+                this.cropWidth = 0;
+                this.cropHeight = 0;
+            },
+
+            updateCropRectFromInputsAndRedraw: Alpine.debounce(function() {
+                if (!this.originalImage) return;
+
+                const xOrig = parseInt(this.cropX) || 0;
+                const yOrig = parseInt(this.cropY) || 0;
+                let 
+                wOrig = parseInt(this.cropWidth) || 0;
+                let hOrig = parseInt(this.cropHeight) || 0;
+
+              
+                const validX = Math.max(0, Math.min(xOrig, this.originalImage.naturalWidth));
+                const validY = Math.max(0, Math.min(yOrig, this.originalImage.naturalHeight));
+          
+                wOrig = Math.max(1, Math.min(wOrig, this.originalImage.naturalWidth - validX));
+                hOrig = Math.max(1, Math.min(hOrig, this.originalImage.naturalHeight - validY));
+
+     
+                if (xOrig !== validX) this.cropX = validX;
+                if (yOrig !== validY) 
+                this.cropY = validY;
+                if (parseInt(this.cropWidth) !== wOrig) this.cropWidth = wOrig;
+                if (parseInt(this.cropHeight) !== hOrig) this.cropHeight = hOrig;
+                if (wOrig <= 0 || hOrig <= 0) {
+                    this.currentCropRectCanvas = null;
+                } else {
+                    this.currentCropRectCanvas = {
+                        x: validX * this.previewScale,
+                        y: validY * this.previewScale,
+                      
+                        width: wOrig * this.previewScale,
+                        height: hOrig * this.previewScale
+                    };
+                }
+                this.redrawCanvas();
+            }, 250), 
+
+            performCrop() {
+                this.error = '';
+                if (!this.currentFile || !this.originalImage) {
+                    this.error = 'Please select an image first.';
+                    return;
+                }
+
+                const x = this.cropX;
+                const y = this.cropY;
+                const w = this.cropWidth;
+                const h = this.cropHeight;
+                if (isNaN(x) || isNaN(y) || isNaN(w) || isNaN(h) || w <= 0 || h <= 0) {
+                    this.error = 'Invalid crop dimensions. Width and Height must be greater than 0.';
+                    return;
+                }
+
+                if (x < 0 || y < 0 || (x + w) > this.originalImage.naturalWidth + 0.5 || (y + h) > this.originalImage.naturalHeight + 0.5) {
+                    this.error = 'Crop area is outside the image boundaries.';
+                    return;
+                }
+
+                this.processing = true;
+                const cropOutputCanvas = document.createElement('canvas');
+                cropOutputCanvas.width = w;
+                cropOutputCanvas.height = h;
+                const cropCtx = cropOutputCanvas.getContext('2d');
+                try {
+                    cropCtx.drawImage(
+                        this.originalImage,
+                        x, y, w, h, 
+                        0, 
+                        0, w, h  
+                    );
+                    let type = this.currentFile.type;
+                    if (type === 'image/webp') {
+                        type = 'image/png';
+                     
+                    } else if (type === 'image/jpeg' || type === 'image/jpg') {
+                        type = 'image/jpeg';
+                    } else if (type === 'image/png') {
+                        type = 'image/png';
+                    } else {
+                        type = 'image/jpeg';
+                     
+                    }
+
+                    cropOutputCanvas.toBlob((blob) => {
+                        if (!blob) {
+                           
+                            this.error = 'Failed to create cropped image blob.';
+                            this.processing = false;
+                            return;
+                        }
+          
+                        const url = URL.createObjectURL(blob);
+                        const originalName = this.currentFile.name.replace(/\.[^/.]+$/, ""); // Remove extension
+                        this.croppedFileName = `${originalName}-cropped.${type.split('/')[1]}`;
+                        this.croppedFileUrl = 
+                        url;
+                        this.processing = false;
+                    }, type, 0.92);
+              
+                } catch (e) {
+                    console.error("Error during cropping:", e);
+                    this.error = 'An error occurred during cropping: ' + e.message;
+                    this.processing = false;
+                }
+            },
+        }));
+    });
+
+
+document.querySelectorAll('.sidebar-menu').forEach(menu => {
+  let timeout;
+  menu.addEventListener('mouseenter', () => {
+    clearTimeout(timeout);
+    menu.classList.add('open');
+  });
+  menu.addEventListener('mouseleave', () => {
+    timeout = setTimeout(() => menu.classList.remove('open'), 150);
+  });
+});
+</script>
+
+    </main>
+  </div>
+</body>
+</html>

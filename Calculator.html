@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mooniverse Toolkit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+     <link rel="stylesheet" href="./assets/css/style.css"/>
+   
+</head>
+<body>
+<div class="flex-min-h-screen">
+    <!-- Sidebar -->
+    <aside class="sidebar1">
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <a href="Index.html">
+      <img src="./assets/img/Mooniverse-Logo1.png" style="max-width: 200px; height: auto;" />
+    </a>
+  </div>
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+    <!-- PDF Menu with hoverable submenu -->
+    <div class="sidebar-menu" data-menu>
+      <button class="sidebar-menu-btn" type="button">
+        <span>PDF</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+          <li><a href="MergePDF.html" class="sidebar-submenu-link">Merge PDF</a></li>
+          <li><a href="SplitPDF.html" class="sidebar-submenu-link">Split PDF</a></li>
+          <li><a href="OrganizePDF.html" class="sidebar-submenu-link">Organize PDF</a></li>
+          <li><a href="Removepages.html" class="sidebar-submenu-link">Remove Pages</a></li>
+          <li><a href="Extractpages.html" class="sidebar-submenu-link">Extract Pages</a></li>
+          <li><a href="PDFtoJPG.html" class="sidebar-submenu-link">PDF to JPG</a></li>
+          <li><a href="PDFtoPNG.html" class="sidebar-submenu-link">PDF to PNG</a></li>
+          <li><a href="SignPDF.html" class="sidebar-submenu-link">Sign PDF</a></li>
+          <li><a href="RotatePDF.html" class="sidebar-submenu-link">Rotate PDF</a></li>
+          <li><a href="Addpagenumbers.html" class="sidebar-submenu-link">Add Page Numbers</a></li>
+          <li><a href="ProtectPDF.html" class="sidebar-submenu-link">Protect PDF</a></li>
+          <li><a href="EXIFdata.html" class="sidebar-submenu-link">Remove EXIF Data</a></li>
+        </ul>
+      </div>
+    </div>
+     <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Image</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="Compressimage.html" class="sidebar-submenu-link">Compress Image</a></li>
+              <li><a href="Resizeimage.html" class="sidebar-submenu-link">Resize Image</a></li>
+              <li><a href="Cropimage.html" class="sidebar-submenu-link">Crop Image</a></li>
+              <li><a href="ConverttoJPG.html" class="sidebar-submenu-link">Convert to JPG</a></li>
+              <li><a href="JPGtoPDF.html" class="sidebar-submenu-link">JPG to PDF</a></li>
+              <li><a href="JPGtoPNG.html" class="sidebar-submenu-link">JPG to PNG</a></li>
+              <li><a href="UpscaleImage.html" class="sidebar-submenu-link">Upscale Image</a></li>
+              <li><a href="RotateImage.html" class="sidebar-submenu-link">Rotate Image</a></li>
+
+              <li><a href="HtmltoImage.html" class="sidebar-submenu-link">HTML to Image</a></li>
+              <li><a href="WatermarkRemoverImage.html" class="sidebar-submenu-link">Watermark Image</a></li>
+              <li><a href="Blurimage.html" class="sidebar-submenu-link">Blur Image</a></li>
+              <li><a href="PhotoEditor.html" class="sidebar-submenu-link">Photo Editor</a></li>
+              <li><a href="Bgremove.html" class="sidebar-submenu-link">Remove Background</a></li>
+              <li><a href="MemeGenerator.html" class="sidebar-submenu-link">Meme Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+    <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Viewer</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="JsonViewer.html" class="sidebar-submenu-link">JSON Viewer & Formatter</a></li>
+              <li><a href="CSVtotext.html" class="sidebar-submenu-link">CSV to Text</a></li>
+              <li><a href="VCFtotext.html" class="sidebar-submenu-link">VCF to Text</a></li>
+              <li><a href="VCFtoExcel.html" class="sidebar-submenu-link">VCF to Excel</a></li>
+               <li><a href="Textcompare.html" class="sidebar-submenu-link">Text Compare</a></li>
+        </ul>
+      </div>
+      </div>
+
+       <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Calculator</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="GSTCalculator.html" class="sidebar-submenu-link">GST Calculator - India</a></li>
+              <li><a href="TaxCalculator.html" class="sidebar-submenu-link">Tax Calculator</a></li>
+              <li><a href="LoanEMIcalculator.html" class="sidebar-submenu-link">Loan EMI Calculator</a></li>
+              <li><a href="PersonalLoancalculator.html" class="sidebar-submenu-link">Personal Loan Calculator</a></li>
+
+               <li><a href="ScientificCalculator.html" class="sidebar-submenu-link">Scientific Calculator</a></li>
+              <li><a href="PercentageCalculator.html" class="sidebar-submenu-link">Percentage Calculator</a></li>
+              <li><a href="CurrencyCalculator.html" class="sidebar-submenu-link">Currency Calculator</a></li>
+              <li><a href="Agecalculator.html" class="sidebar-submenu-link">Age Calculator</a></li>
+
+               <li><a href="TimeCalculator.html" class="sidebar-submenu-link">Time Calculator</a></li>
+              <li><a href="TimeDurationCalculator.html" class="sidebar-submenu-link">Time Duration Calculator</a></li>
+              <li><a href="ElectricityCalculator.html" class="sidebar-submenu-link">Electricity Calculator</a></li>
+              <li><a href="WeightCalculator.html" class="sidebar-submenu-link">Weight Calculator</a></li>
+
+              <li><a href="TimeZoneCalculator.html" class="sidebar-submenu-link">Time Zone Calculator</a></li>
+              <li><a href="ProbabilityCalculator.html" class="sidebar-submenu-link">Probability Calculator</a></li>
+        </ul>
+      </div>
+      </div>
+
+ <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>SEO</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="WordCounter.html" class="sidebar-submenu-link">Word counter</a></li>
+              <li><a href="FaviconGenerator.html" class="sidebar-submenu-link">Favicon generator</a></li>
+              <li><a href="SitemapGenerator.html" class="sidebar-submenu-link">Sitemap Generator</a></li>
+              <li><a href="RobotstxtGenerator.html" class="sidebar-submenu-link">Robots.txt Generator</a></li>
+
+              <li><a href="MetaTagGenerator.html" class="sidebar-submenu-link">Meta Tag Generator</a></li>
+              <li><a href="HtaccessGenerator.html" class="sidebar-submenu-link">.htaccess Generator</a></li>
+              <li><a href="StructuredDataGenerator.html" class="sidebar-submenu-link">Structured Data Generator</a></li>
+              <li><a href="OGtagsGenerator.html" class="sidebar-submenu-link">OG Tags Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Converters</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="Mp4toMp3.html" class="sidebar-submenu-link">MP4 to MP3</a></li>
+              <li><a href="WordtoPdf.html" class="sidebar-submenu-link">word to PDF</a></li>
+              <li><a href="XmltoJson.html" class="sidebar-submenu-link">XML to JSON</a></li>
+              <li><a href="JsontoXml.html" class="sidebar-submenu-link">JSON to XML</a></li>
+
+                <li><a href="JsontoCsv.html" class="sidebar-submenu-link">JSON to CSV</a></li>
+              <li><a href="JsontoExcel.html" class="sidebar-submenu-link">JSON to Excel</a></li>
+              <li><a href="TexttoHtml.html" class="sidebar-submenu-link">Text to HTMl</a></li>
+              <li><a href="PpttoPdf.html" class="sidebar-submenu-link">Powerpoint to PDF</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Downloader</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu1" data-submenu>
+        <ul class="sidebar-submenu-list1 sidebar-submenu1-grid3">
+          <li><a href="InstaReels.html" class="sidebar-submenu-link1">Instagram Reels Downloader</a></li>
+              <li><a href="YoutubeVideoDownloader.html" class="sidebar-submenu-link1">Youtube Videos Downloader</a></li>
+              <li><a href="InstaPost.html" class="sidebar-submenu-link1">Instagram Post Downloader</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Minifier</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+           <li><a href="Htmlminifier.html" class="sidebar-submenu-link">HTML Minifier</a></li>
+              <li><a href="Cssminifier.html" class="sidebar-submenu-link">CSS Minifier</a></li>
+              <li><a href="JsMinifier.html" class="sidebar-submenu-link">JS Minifier</a></li>
+              <li><a href="HtmlUnminifier.html" class="sidebar-submenu-link">HTML Unminifier</a></li>
+               <li><a href="Cssunminifier.html" class="sidebar-submenu-link">CSS Unminifier</a></li>
+              <li><a href="JsUnminifier.html" class="sidebar-submenu-link">JS Unminifier</a></li>
+        </ul>
+      </div>
+      </div>
+
+  </nav>
+</aside>
+
+    <!-- Main Content -->
+     <main class="main-content">
+        <header class="header-section">
+            <h1>Calculator Tools</h1>
+        </header>
+        <section class="tools-grid">
+            <div class="tool-card">
+                <a href="GSTCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="12" y1="12" x2="12" y2="18"/>
+                        <line x1="9" y1="15" x2="15" y2="15"/>
+                    </svg>
+                    <h2>GST Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="TaxCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <circle cx="9" cy="15" r="1"/>
+                        <circle cx="15" cy="15" r="1"/>
+                        <line x1="9" y1="15" x2="15" y2="21"/>
+                        <line x1="15" y1="15" x2="9" y2="21"/>
+                    </svg>
+                    <h2>Tax Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="LoanEMIcalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <polyline points="9 13 12 16 15 13"/>
+                    </svg>
+                    <h2>Loan EMI Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="PersonalLoancalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="9" y1="17" x2="15" y2="17"/>
+                    </svg>
+                    <h2>Personal Loan Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="ScientificCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <polyline points="10 14 13 17 16 14"/>
+                        <line x1="13" y1="17" x2="13" y2="11"/>
+                    </svg>
+                    <h2>Scientific Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="PercentageCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <rect x="9" y="14" width="6" height="4" rx="1"/>
+                        <circle cx="11" cy="16" r="0.5"/>
+                        <polyline points="10 18 12 15 14 18"/>
+                    </svg>
+                    <h2>Percentage Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="CurrencyCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <rect x="9" y="14" width="6" height="4" rx="1"/>
+                        <circle cx="11" cy="16" r="0.5"/>
+                        <polyline points="10 18 12 15 14 18"/>
+                    </svg>
+                    <h2>Currency Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="Agecalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <path d="M8 18c1.5-2 4.5-2 6 0"/>
+                    </svg>
+                    <h2>Age Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="TimeCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <path d="M12 16v-4"/>
+                        <path d="M9 13l3-3 3 3"/>
+                    </svg>
+                    <h2>Time Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="TimeDurationCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <text x="10" y="20" font-size="6" fill="currentColor" font-family="Arial" font-weight="bold">#</text>
+                    </svg>
+                    <h2>Time Duration Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="ElectricityCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <rect x="10" y="15" width="4" height="4" rx="1"/>
+                        <path d="M12 15v-1a2 2 0 1 1 4 0v1"/>
+                    </svg>
+                    <h2>Electricity Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="WeightCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <rect x="9" y="15" width="6" height="4" rx="1"/>
+                        <line x1="9" y1="15" x2="15" y2="19"/>
+                    </svg>
+                    <h2>Weight Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="TimeZoneCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <rect x="9" y="15" width="6" height="4" rx="1"/>
+                        <line x1="9" y1="15" x2="15" y2="19"/>
+                    </svg>
+                    <h2>Time Zone Calculator</h2>
+                </a>
+            </div>
+
+            <div class="tool-card">
+                <a href="ProbabilityCalculator.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-4 text-green-500"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <rect x="9" y="15" width="6" height="4" rx="1"/>
+                        <line x1="9" y1="15" x2="15" y2="19"/>
+                    </svg>
+                    <h2>Probability Calculator</h2>
+                </a>
+            </div>
+        </section>
+    </main>
+</div>
+  <script defer src="assets/js/alpine.min.js"></script>
+<script>
+    document.querySelectorAll('.sidebar-menu').forEach(menu => {
+        let timeout;
+        menu.addEventListener('mouseenter', () => {
+            clearTimeout(timeout);
+            menu.classList.add('open');
+        });
+        menu.addEventListener('mouseleave', () => {
+            timeout = setTimeout(() => menu.classList.remove('open'), 150);
+        });
+    });
+</script>
+</body>
+</html>

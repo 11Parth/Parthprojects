@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mooniverse Toolkit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+<body class="bg-gradient-to-br from-green-200 via-green-300 to-green-400 min-h-screen font-sans">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="sidebar1">
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <a href="Index.html">
+      <img src="./assets/img/Mooniverse-Logo1.png" style="max-width: 200px; height: auto;" />
+    </a>
+  </div>
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+    <!-- PDF Menu with hoverable submenu -->
+    <div class="sidebar-menu" data-menu>
+      <button class="sidebar-menu-btn" type="button">
+        <span>PDF</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+          <li><a href="MergePDF.html" class="sidebar-submenu-link">Merge PDF</a></li>
+          <li><a href="SplitPDF.html" class="sidebar-submenu-link">Split PDF</a></li>
+          <li><a href="OrganizePDF.html" class="sidebar-submenu-link">Organize PDF</a></li>
+          <li><a href="Removepages.html" class="sidebar-submenu-link">Remove Pages</a></li>
+          <li><a href="Extractpages.html" class="sidebar-submenu-link">Extract Pages</a></li>
+          <li><a href="PDFtoJPG.html" class="sidebar-submenu-link">PDF to JPG</a></li>
+          <li><a href="PDFtoPNG.html" class="sidebar-submenu-link">PDF to PNG</a></li>
+          <li><a href="SignPDF.html" class="sidebar-submenu-link">Sign PDF</a></li>
+          <li><a href="RotatePDF.html" class="sidebar-submenu-link">Rotate PDF</a></li>
+          <li><a href="Addpagenumbers.html" class="sidebar-submenu-link">Add Page Numbers</a></li>
+          <li><a href="ProtectPDF.html" class="sidebar-submenu-link">Protect PDF</a></li>
+          <li><a href="EXIFdata.html" class="sidebar-submenu-link">Remove EXIF Data</a></li>
+        </ul>
+      </div>
+    </div>
+     <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Image</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="Compressimage.html" class="sidebar-submenu-link">Compress Image</a></li>
+              <li><a href="Resizeimage.html" class="sidebar-submenu-link">Resize Image</a></li>
+              <li><a href="Cropimage.html" class="sidebar-submenu-link">Crop Image</a></li>
+              <li><a href="ConverttoJPG.html" class="sidebar-submenu-link">Convert to JPG</a></li>
+              <li><a href="JPGtoPDF.html" class="sidebar-submenu-link">JPG to PDF</a></li>
+              <li><a href="JPGtoPNG.html" class="sidebar-submenu-link">JPG to PNG</a></li>
+              <li><a href="UpscaleImage.html" class="sidebar-submenu-link">Upscale Image</a></li>
+              <li><a href="RotateImage.html" class="sidebar-submenu-link">Rotate Image</a></li>
+
+              <li><a href="HtmltoImage.html" class="sidebar-submenu-link">HTML to Image</a></li>
+              <li><a href="WatermarkRemoverImage.html" class="sidebar-submenu-link">Watermark Image</a></li>
+              <li><a href="Blurimage.html" class="sidebar-submenu-link">Blur Image</a></li>
+              <li><a href="PhotoEditor.html" class="sidebar-submenu-link">Photo Editor</a></li>
+              <li><a href="Bgremove.html" class="sidebar-submenu-link">Remove Background</a></li>
+              <li><a href="MemeGenerator.html" class="sidebar-submenu-link">Meme Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+    <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Viewer</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="JsonViewer.html" class="sidebar-submenu-link">JSON Viewer & Formatter</a></li>
+              <li><a href="CSVtotext.html" class="sidebar-submenu-link">CSV to Text</a></li>
+              <li><a href="VCFtotext.html" class="sidebar-submenu-link">VCF to Text</a></li>
+              <li><a href="VCFtoExcel.html" class="sidebar-submenu-link">VCF to Excel</a></li>
+               <li><a href="Textcompare.html" class="sidebar-submenu-link">Text Compare</a></li>
+        </ul>
+      </div>
+      </div>
+
+       <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Calculator</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="GSTCalculator.html" class="sidebar-submenu-link">GST Calculator - India</a></li>
+              <li><a href="TaxCalculator.html" class="sidebar-submenu-link">Tax Calculator</a></li>
+              <li><a href="LoanEMIcalculator.html" class="sidebar-submenu-link">Loan EMI Calculator</a></li>
+              <li><a href="PersonalLoancalculator.html" class="sidebar-submenu-link">Personal Loan Calculator</a></li>
+
+               <li><a href="ScientificCalculator.html" class="sidebar-submenu-link">Scientific Calculator</a></li>
+              <li><a href="PercentageCalculator.html" class="sidebar-submenu-link">Percentage Calculator</a></li>
+              <li><a href="CurrencyCalculator.html" class="sidebar-submenu-link">Currency Calculator</a></li>
+              <li><a href="Agecalculator.html" class="sidebar-submenu-link">Age Calculator</a></li>
+
+               <li><a href="TimeCalculator.html" class="sidebar-submenu-link">Time Calculator</a></li>
+              <li><a href="TimeDurationCalculator.html" class="sidebar-submenu-link">Time Duration Calculator</a></li>
+              <li><a href="ElectricityCalculator.html" class="sidebar-submenu-link">Electricity Calculator</a></li>
+              <li><a href="WeightCalculator.html" class="sidebar-submenu-link">Weight Calculator</a></li>
+
+              <li><a href="TimeZoneCalculator.html" class="sidebar-submenu-link">Time Zone Calculator</a></li>
+              <li><a href="ProbabilityCalculator.html" class="sidebar-submenu-link">Probability Calculator</a></li>
+        </ul>
+      </div>
+      </div>
+
+ <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>SEO</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="WordCounter.html" class="sidebar-submenu-link">Word counter</a></li>
+              <li><a href="FaviconGenerator.html" class="sidebar-submenu-link">Favicon generator</a></li>
+              <li><a href="SitemapGenerator.html" class="sidebar-submenu-link">Sitemap Generator</a></li>
+              <li><a href="RobotstxtGenerator.html" class="sidebar-submenu-link">Robots.txt Generator</a></li>
+
+              <li><a href="MetaTagGenerator.html" class="sidebar-submenu-link">Meta Tag Generator</a></li>
+              <li><a href="HtaccessGenerator.html" class="sidebar-submenu-link">.htaccess Generator</a></li>
+              <li><a href="StructuredDataGenerator.html" class="sidebar-submenu-link">Structured Data Generator</a></li>
+              <li><a href="OGtagsGenerator.html" class="sidebar-submenu-link">OG Tags Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Converters</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="Mp4toMp3.html" class="sidebar-submenu-link">MP4 to MP3</a></li>
+              <li><a href="WordtoPdf.html" class="sidebar-submenu-link">word to PDF</a></li>
+              <li><a href="XmltoJson.html" class="sidebar-submenu-link">XML to JSON</a></li>
+              <li><a href="JsontoXml.html" class="sidebar-submenu-link">JSON to XML</a></li>
+
+                <li><a href="JsontoCsv.html" class="sidebar-submenu-link">JSON to CSV</a></li>
+              <li><a href="JsontoExcel.html" class="sidebar-submenu-link">JSON to Excel</a></li>
+              <li><a href="TexttoHtml.html" class="sidebar-submenu-link">Text to HTMl</a></li>
+              <li><a href="PpttoPdf.html" class="sidebar-submenu-link">Powerpoint to PDF</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Downloader</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu1" data-submenu>
+        <ul class="sidebar-submenu-list1 sidebar-submenu1-grid3">
+          <li><a href="InstaReels.html" class="sidebar-submenu-link1">Instagram Reels Downloader</a></li>
+              <li><a href="YoutubeVideoDownloader.html" class="sidebar-submenu-link1">Youtube Videos Downloader</a></li>
+              <li><a href="InstaPost.html" class="sidebar-submenu-link1">Instagram Post Downloader</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Minifier</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+           <li><a href="Htmlminifier.html" class="sidebar-submenu-link">HTML Minifier</a></li>
+              <li><a href="Cssminifier.html" class="sidebar-submenu-link">CSS Minifier</a></li>
+              <li><a href="JsMinifier.html" class="sidebar-submenu-link">JS Minifier</a></li>
+              <li><a href="HtmlUnminifier.html" class="sidebar-submenu-link">HTML Unminifier</a></li>
+               <li><a href="Cssunminifier.html" class="sidebar-submenu-link">CSS Unminifier</a></li>
+              <li><a href="JsUnminifier.html" class="sidebar-submenu-link">JS Unminifier</a></li>
+        </ul>
+      </div>
+      </div>
+
+  </nav>
+</aside>
+    <!-- Main Content -->
+    <main class="main-content1">
+    
+   <div class="tool-section1">
+    <h1 class="tool-title1">JSON Viewer & Formatter</h1>
+    <div class="mb-3">
+      <label class="form-label">Select Mode:</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="modeOptions" id="modeFormat" value="format" checked>
+        <div class="form-check-label1" for="modeFormat">Format JSON</div>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="modeOptions" id="modeViewer" value="viewer">
+        <div class="form-check-label1" for="modeViewer">JSON Viewer</div>
+      </div>
+    </div>
+    <div class="row1">
+      <div class="col-md-6">
+        <label for="jsonInput" class="form-label">Enter JSON:</label>
+        <textarea id="jsonInput" placeholder='Paste your JSON here'></textarea>
+        <div id="errorMsg" class="error d-none">Invalid JSON</div>
+        <div class="mt-3 d-flex flex-wrap gap-2 align-items-center">
+          <button id="processBtn" class="butn-1">Format JSON</button>
+          <label for="fileUpload" class="butn btn-secondary">Upload JSON File</label>
+          <button id="clearBtn" class="butn btn-outline-secondary">Clear</button>
+          <input type="file" id="fileUpload" accept=".json,application/json" class="d-none" />
+          <button id="copyBtn" class="butn btn-success">Copy</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label id="outputLabel" for="jsonOutput1" class="form-label">Formatted JSON Output:</label>
+        <pre id="jsonOutput1" aria-live="polite" aria-atomic="true"></pre>
+      </div>
+    </div>
+  </div>
+
+<div class="tool-footer2">
+  <div class="footer-buttons2">
+    <a href="CSVtotext.html" class="footer-btn2"> CSV to Text</a>
+    <a href="VCFtotext.html" class="footer-btn2"> VCF to Text</a>
+    <a href="VCFtoExcel.html" class="footer-btn2"> VCF to Excel </a>
+    <a href="Textcompare.html" class="footer-btn2"> Text Compare </a>
+</div>
+</div>
+ <script defer src="./assets/js/alpine.min.js"></script>
+  <script defer src="assets/js/pdf-lib.min.js"></script>
+  <script defer src="assets/js/jszip.min.js"></script>
+  <script defer src="assets/js/xlsx.full.min.js"></script>
+  <script>
+    const jsonInput = document.getElementById('jsonInput');
+    const jsonOutput = document.getElementById('jsonOutput');
+    const processBtn = document.getElementById('processBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const errorMsg = document.getElementById('errorMsg');
+    const fileUpload = document.getElementById('fileUpload');
+    const modeFormat = document.getElementById('modeFormat');
+    const modeViewer = document.getElementById('modeViewer');
+    const outputLabel = document.getElementById('outputLabel');
+
+    function createJsonTree(data) {
+      if (typeof data === 'object' && data !== null) {
+        if (Array.isArray(data)) {
+          return createCollapsible('Array', data.map((item, i) => createJsonTree(item, i)));
+        } else {
+          return createCollapsible('Object', Object.entries(data).map(([key, val]) => createJsonKeyValue(key, val)));
+        }
+      } else {
+        return createJsonValue(data);
+      }
+    }
+
+    function createCollapsible(type, children) {
+      const container = document.createElement('div');
+      const toggle = document.createElement('span');
+      toggle.className = 'json-key json-toggle';
+      toggle.textContent = type + ' [' + children.length + ']';
+      toggle.tabIndex = 0;
+      toggle.setAttribute('role', 'button');
+      toggle.setAttribute('aria-expanded', 'false');
+
+      const content = document.createElement('div');
+      content.className = 'json-collapsible';
+
+      children.forEach(child => {
+        content.appendChild(child);
+      });
+
+      toggle.addEventListener('click', () => {
+        const isOpen = content.classList.toggle('open');
+        toggle.classList.toggle('open', isOpen);
+        toggle.setAttribute('aria-expanded', isOpen);
+      });
+      toggle.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggle.click();
+        }
+      });
+
+      container.appendChild(toggle);
+      container.appendChild(content);
+      return container;
+    }
+
+    function createJsonKeyValue(key, val) {
+      const container = document.createElement('div');
+      container.style.marginLeft = '1rem';
+
+      const keySpan = document.createElement('span');
+      keySpan.className = 'json-key';
+      keySpan.textContent = `"${key}": `;
+
+      container.appendChild(keySpan);
+
+      if (typeof val === 'object' && val !== null) {
+        container.appendChild(createJsonTree(val));
+      } else {
+        container.appendChild(createJsonValue(val));
+      }
+      return container;
+    }
+
+    function createJsonValue(val) {
+      const span = document.createElement('span');
+      if (typeof val === 'string') {
+        span.className = 'json-string';
+        span.textContent = `"${val}"`;
+      } else if (typeof val === 'number') {
+        span.className = 'json-number';
+        span.textContent = val;
+      } else if (typeof val === 'boolean') {
+        span.className = 'json-boolean';
+        span.textContent = val;
+      } else if (val === null) {
+        span.className = 'json-null';
+        span.textContent = 'null';
+      } else {
+        span.textContent = String(val);
+      }
+      return span;
+    }
+
+    function renderJsonViewer(json) {
+      jsonOutput.innerHTML = '';
+      const tree = createJsonTree(json);
+      jsonOutput.appendChild(tree);
+    }
+
+    function formatJson(json) {
+      return JSON.stringify(json, null, 2);
+    }
+
+    function processJson() {
+      const input = jsonInput.value.trim();
+      if (!input) {
+        jsonOutput.textContent = '';
+        errorMsg.classList.add('d-none');
+        return;
+      }
+      try {
+        const parsed = JSON.parse(input);
+        errorMsg.classList.add('d-none');
+        if (modeFormat.checked) {
+          jsonInput.value = formatJson(parsed);
+          jsonOutput.textContent = jsonInput.value;
+          outputLabel.textContent = 'Formatted JSON Output:';
+          jsonOutput.style.backgroundColor = '#212529';
+          jsonOutput.style.color = '#d1d5db';
+          jsonOutput.style.fontFamily = 'monospace';
+          jsonOutput.style.padding = '1rem';
+          jsonOutput.style.borderRadius = '0.375rem';
+          jsonOutput.style.overflow = 'auto';
+        } else {
+          outputLabel.textContent = 'JSON Viewer:';
+          jsonOutput.style.backgroundColor = '#212529';
+          jsonOutput.style.color = '#d1d5db';
+          jsonOutput.style.fontFamily = 'monospace';
+          jsonOutput.style.padding = '1rem';
+          jsonOutput.style.borderRadius = '0.375rem';
+          jsonOutput.style.overflow = 'auto';
+          renderJsonViewer(parsed);
+        }
+      } catch (e) {
+        jsonOutput.textContent = '';
+        errorMsg.classList.remove('d-none');
+      }
+    }
+
+    processBtn.addEventListener('click', processJson);
+
+    clearBtn.addEventListener('click', () => {
+      jsonInput.value = '';
+      jsonOutput.textContent = '';
+      errorMsg.classList.add('d-none');
+      jsonInput.focus();
+    });
+
+    fileUpload.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        jsonInput.value = e.target.result;
+        errorMsg.classList.add('d-none');
+        jsonOutput.textContent = '';
+      };
+      reader.readAsText(file);
+      fileUpload.value = '';
+    });
+
+    copyBtn.addEventListener('click', () => {
+      if (!jsonOutput.textContent.trim()) return;
+      // For viewer mode, copy the formatted JSON string
+      if (modeViewer.checked) {
+        try {
+          const json = JSON.parse(jsonInput.value.trim());
+          const formatted = JSON.stringify(json, null, 2);
+          navigator.clipboard.writeText(formatted).then(() => {
+            copyBtn.textContent = 'Copied!';
+            setTimeout(() => (copyBtn.textContent = 'Copy Output'), 1500);
+          });
+        } catch {
+          // If invalid JSON, do nothing
+        }
+      } else {
+        // Format mode: copy the output text as is
+        navigator.clipboard.writeText(jsonOutput.textContent).then(() => {
+          copyBtn.textContent = 'Copied!';
+          setTimeout(() => (copyBtn.textContent = 'Copy Output'), 1500);
+        });
+      }
+    });
+
+    // Update button text and output label on mode change
+    function updateModeUI() {
+      if (modeFormat.checked) {
+        processBtn.textContent = 'Format JSON';
+        outputLabel.textContent = 'Formatted JSON Output:';
+        jsonOutput.textContent = '';
+      } else {
+        processBtn.textContent = 'View JSON';
+        outputLabel.textContent = 'JSON Viewer:';
+        jsonOutput.textContent = '';
+      }
+      errorMsg.classList.add('d-none');
+    }
+
+    modeFormat.addEventListener('change', updateModeUI);
+    modeViewer.addEventListener('change', updateModeUI);
+    
+document.querySelectorAll('.sidebar-menu').forEach(menu => {
+  let timeout;
+  menu.addEventListener('mouseenter', () => {
+    clearTimeout(timeout);
+    menu.classList.add('open');
+  });
+  menu.addEventListener('mouseleave', () => {
+    timeout = setTimeout(() => menu.classList.remove('open'), 150);
+  });
+});
+  </script>
+
+    </main>
+  </div>
+</body>
+</html>

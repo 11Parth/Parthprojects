@@ -1,0 +1,418 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mooniverse Toolkit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Removed Tailwind CSS CDN -->
+    <script src="assets/js/alpine.min.js"></script>
+    <script src="assets/js/pdf-lib.min.js"></script>
+    <script src="assets/js/jszip.min.js"></script>
+    <script src="assets/js/xlsx.full.min.js"></script>
+    <script src="assets/js/pdf.min.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css"/>
+
+</head>
+<body>
+       <div class="flex-min-h-screen">
+    <!-- Sidebar -->
+    <aside class="sidebar1">
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <a href="Index.html">
+      <img src="./assets/img/Mooniverse-Logo1.png" style="max-width: 200px; height: auto;" />
+    </a>
+  </div>
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+    <!-- PDF Menu with hoverable submenu -->
+    <div class="sidebar-menu" data-menu>
+      <button class="sidebar-menu-btn" type="button">
+        <span>PDF</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+          <li><a href="MergePDF.html" class="sidebar-submenu-link">Merge PDF</a></li>
+          <li><a href="SplitPDF.html" class="sidebar-submenu-link">Split PDF</a></li>
+          <li><a href="OrganizePDF.html" class="sidebar-submenu-link">Organize PDF</a></li>
+          <li><a href="Removepages.html" class="sidebar-submenu-link">Remove Pages</a></li>
+          <li><a href="Extractpages.html" class="sidebar-submenu-link">Extract Pages</a></li>
+          <li><a href="PDFtoJPG.html" class="sidebar-submenu-link">PDF to JPG</a></li>
+          <li><a href="PDFtoPNG.html" class="sidebar-submenu-link">PDF to PNG</a></li>
+          <li><a href="SignPDF.html" class="sidebar-submenu-link">Sign PDF</a></li>
+          <li><a href="RotatePDF.html" class="sidebar-submenu-link">Rotate PDF</a></li>
+          <li><a href="Addpagenumbers.html" class="sidebar-submenu-link">Add Page Numbers</a></li>
+          <li><a href="ProtectPDF.html" class="sidebar-submenu-link">Protect PDF</a></li>
+          <li><a href="EXIFdata.html" class="sidebar-submenu-link">Remove EXIF Data</a></li>
+        </ul>
+      </div>
+    </div>
+     <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Image</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="Compressimage.html" class="sidebar-submenu-link">Compress Image</a></li>
+              <li><a href="Resizeimage.html" class="sidebar-submenu-link">Resize Image</a></li>
+              <li><a href="Cropimage.html" class="sidebar-submenu-link">Crop Image</a></li>
+              <li><a href="ConverttoJPG.html" class="sidebar-submenu-link">Convert to JPG</a></li>
+              <li><a href="JPGtoPDF.html" class="sidebar-submenu-link">JPG to PDF</a></li>
+              <li><a href="JPGtoPNG.html" class="sidebar-submenu-link">JPG to PNG</a></li>
+              <li><a href="UpscaleImage.html" class="sidebar-submenu-link">Upscale Image</a></li>
+              <li><a href="RotateImage.html" class="sidebar-submenu-link">Rotate Image</a></li>
+
+              <li><a href="HtmltoImage.html" class="sidebar-submenu-link">HTML to Image</a></li>
+              <li><a href="WatermarkRemoverImage.html" class="sidebar-submenu-link">Watermark Image</a></li>
+              <li><a href="Blurimage.html" class="sidebar-submenu-link">Blur Image</a></li>
+              <li><a href="PhotoEditor.html" class="sidebar-submenu-link">Photo Editor</a></li>
+              <li><a href="Bgremove.html" class="sidebar-submenu-link">Remove Background</a></li>
+              <li><a href="MemeGenerator.html" class="sidebar-submenu-link">Meme Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+    <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Viewer</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="JsonViewer.html" class="sidebar-submenu-link">JSON Viewer & Formatter</a></li>
+              <li><a href="CSVtotext.html" class="sidebar-submenu-link">CSV to Text</a></li>
+              <li><a href="VCFtotext.html" class="sidebar-submenu-link">VCF to Text</a></li>
+              <li><a href="VCFtoExcel.html" class="sidebar-submenu-link">VCF to Excel</a></li>
+               <li><a href="Textcompare.html" class="sidebar-submenu-link">Text Compare</a></li>
+        </ul>
+      </div>
+      </div>
+
+       <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Calculator</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="GSTCalculator.html" class="sidebar-submenu-link">GST Calculator - India</a></li>
+              <li><a href="TaxCalculator.html" class="sidebar-submenu-link">Tax Calculator</a></li>
+              <li><a href="LoanEMIcalculator.html" class="sidebar-submenu-link">Loan EMI Calculator</a></li>
+              <li><a href="PersonalLoancalculator.html" class="sidebar-submenu-link">Personal Loan Calculator</a></li>
+
+               <li><a href="ScientificCalculator.html" class="sidebar-submenu-link">Scientific Calculator</a></li>
+              <li><a href="PercentageCalculator.html" class="sidebar-submenu-link">Percentage Calculator</a></li>
+              <li><a href="CurrencyCalculator.html" class="sidebar-submenu-link">Currency Calculator</a></li>
+              <li><a href="Agecalculator.html" class="sidebar-submenu-link">Age Calculator</a></li>
+
+               <li><a href="TimeCalculator.html" class="sidebar-submenu-link">Time Calculator</a></li>
+              <li><a href="TimeDurationCalculator.html" class="sidebar-submenu-link">Time Duration Calculator</a></li>
+              <li><a href="ElectricityCalculator.html" class="sidebar-submenu-link">Electricity Calculator</a></li>
+              <li><a href="WeightCalculator.html" class="sidebar-submenu-link">Weight Calculator</a></li>
+
+              <li><a href="TimeZoneCalculator.html" class="sidebar-submenu-link">Time Zone Calculator</a></li>
+              <li><a href="ProbabilityCalculator.html" class="sidebar-submenu-link">Probability Calculator</a></li>
+        </ul>
+      </div>
+      </div>
+
+ <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>SEO</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="WordCounter.html" class="sidebar-submenu-link">Word counter</a></li>
+              <li><a href="FaviconGenerator.html" class="sidebar-submenu-link">Favicon generator</a></li>
+              <li><a href="SitemapGenerator.html" class="sidebar-submenu-link">Sitemap Generator</a></li>
+              <li><a href="RobotstxtGenerator.html" class="sidebar-submenu-link">Robots.txt Generator</a></li>
+
+              <li><a href="MetaTagGenerator.html" class="sidebar-submenu-link">Meta Tag Generator</a></li>
+              <li><a href="HtaccessGenerator.html" class="sidebar-submenu-link">.htaccess Generator</a></li>
+              <li><a href="StructuredDataGenerator.html" class="sidebar-submenu-link">Structured Data Generator</a></li>
+              <li><a href="OGtagsGenerator.html" class="sidebar-submenu-link">OG Tags Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Converters</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="Mp4toMp3.html" class="sidebar-submenu-link">MP4 to MP3</a></li>
+              <li><a href="WordtoPdf.html" class="sidebar-submenu-link">word to PDF</a></li>
+              <li><a href="XmltoJson.html" class="sidebar-submenu-link">XML to JSON</a></li>
+              <li><a href="JsontoXml.html" class="sidebar-submenu-link">JSON to XML</a></li>
+
+                <li><a href="JsontoCsv.html" class="sidebar-submenu-link">JSON to CSV</a></li>
+              <li><a href="JsontoExcel.html" class="sidebar-submenu-link">JSON to Excel</a></li>
+              <li><a href="TexttoHtml.html" class="sidebar-submenu-link">Text to HTMl</a></li>
+              <li><a href="PpttoPdf.html" class="sidebar-submenu-link">Powerpoint to PDF</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Downloader</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu1" data-submenu>
+        <ul class="sidebar-submenu-list1 sidebar-submenu1-grid3">
+          <li><a href="InstaReels.html" class="sidebar-submenu-link1">Instagram Reels Downloader</a></li>
+              <li><a href="YoutubeVideoDownloader.html" class="sidebar-submenu-link1">Youtube Videos Downloader</a></li>
+              <li><a href="InstaPost.html" class="sidebar-submenu-link1">Instagram Post Downloader</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Minifier</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+           <li><a href="Htmlminifier.html" class="sidebar-submenu-link">HTML Minifier</a></li>
+              <li><a href="Cssminifier.html" class="sidebar-submenu-link">CSS Minifier</a></li>
+              <li><a href="JsMinifier.html" class="sidebar-submenu-link">JS Minifier</a></li>
+              <li><a href="HtmlUnminifier.html" class="sidebar-submenu-link">HTML Unminifier</a></li>
+               <li><a href="Cssunminifier.html" class="sidebar-submenu-link">CSS Unminifier</a></li>
+              <li><a href="JsUnminifier.html" class="sidebar-submenu-link">JS Unminifier</a></li>
+        </ul>
+      </div>
+      </div>
+
+  </nav>
+</aside>
+
+    <!-- Main Content -->
+     <main class="main-content">
+            <div class="tool-card2">
+                <div class="tool-header">
+                    <h1>Sitemap Generator</h1>
+                    <p>Enter your website's main URL and a list of other important URLs to include in your sitemap.</p>
+                </div>
+
+                <div class="form-section">
+                    <form id="sitemapForm" class="sitemap-form" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="baseUrlInput" class="form-label">Main Website URL (Homepage):</label>
+                            <input type="url1" id="baseUrlInput" placeholder="https://example.com" required
+                                class="form-input" />
+                            <p class="input-hint">This will be the first URL in your sitemap (Priority: 1.0).</p>
+                        </div>
+
+                        
+
+                        <div class="form-group">
+                            <label for="lastmodOption" class="form-label">Last Modified Date:</label>
+                            <select id="lastmodOption" class="form-select">
+                                <option value="today">Today's Date</option>
+                                <option value="none">Don't Include Lastmod</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" id="generateBtn" class="generate-btn">
+                            Generate Sitemap
+                        </button>
+                    </form>
+
+                    <div id="result" class="result-section" aria-live="polite" aria-atomic="true">
+                        <!-- Result will be injected here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-footer2">
+                <div class="footer-buttons2">
+                    <a href="WordCounter.html" class="footer-btn2"> Word Counter</a>
+                    <a href="SitemapGenerator.html" class="footer-btn2"> Favicon Generator </a>
+                    <a href="RobotstxtGenerator.html" class="footer-btn2">
+                        Robots .txt Generator</a>
+                    <a href="MetaTagGenerator.html" class="footer-btn2">
+                        Meta Tag Generator </a>
+                    <a href="HtaccessGenerator.html" class="footer-btn2">
+                        .htaccess Generator</a>
+                    <a href="StructuredDataGenerator.html" class="footer-btn2">
+                        Structured Data Generator</a>
+                    <a href="OGtagsGenerator.html" class="footer-btn2"> OG Tags Generator</a>
+                </div>
+            </div>
+      
+    
+    <script>
+        const form = document.getElementById('sitemapForm');
+        const baseUrlInput = document.getElementById('baseUrlInput');
+        const urlsListInput = document.getElementById('urlsListInput');
+        const lastmodOptionInput = document.getElementById('lastmodOption');
+        const resultDiv = document.getElementById('result');
+        const generateBtn = document.getElementById('generateBtn');
+
+        function escapeXml(unsafe) {
+            if (typeof unsafe !== 'string') return '';
+            return unsafe.replace(/[<>&'"]/g, function (c) {
+                switch (c) {
+                    case '<': return '&lt;';
+                    case '>': return '&gt;';
+                    case '&': return '&amp;';
+                    case '\'': return '&apos;';
+                    case '"': return '&quot;';
+                }
+                return c;
+            });
+        }
+
+        function generateSitemapEntry(url, lastmod, priorityValue) {
+            let entry = '   <url>\n';
+            entry += `     <loc>${escapeXml(url)}</loc>\n`;
+            if (lastmod) {
+                entry += `     <lastmod>${lastmod}</lastmod>\n`;
+            }
+            if (priorityValue !== null && priorityValue !== undefined) {
+                entry += `     <priority>${priorityValue.toFixed(1)}</priority>\n`;
+            }
+            entry += '   </url>\n';
+            return entry;
+        }
+
+        function generateSitemapFromList(baseUrl, additionalUrlsArray, includeLastmod) {
+            let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
+            sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
+            sitemap += '        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"\n';
+            sitemap += '        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n';
+
+            const lastmod = includeLastmod === 'today' ? new Date().toISOString().split('T')[0] : null;
+
+            // Add base URL (homepage) with priority 1.0
+            if (baseUrl) {
+                sitemap += generateSitemapEntry(baseUrl, lastmod, 1.0);
+            }
+
+            // Add additional URLs with priority 0.8
+            const defaultPriorityForOthers = 0.8;
+            additionalUrlsArray.forEach(url => {
+                if (url.trim() !== '' && url.trim() !== baseUrl) {
+                    sitemap += generateSitemapEntry(url.trim(), lastmod, defaultPriorityForOthers);
+                }
+            });
+
+            sitemap += '</urlset>';
+            return sitemap;
+        }
+
+        function createDownloadLink(sitemapContent, fileName = 'sitemap.xml') {
+            const existingLink = resultDiv.querySelector('.download-sitemap-link-button');
+            if (existingLink) existingLink.remove();
+
+            const link = document.createElement('a');
+            const blob = new Blob([sitemapContent], { type: 'application/xml;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            link.href = url;
+            link.download = fileName;
+            link.style.display = 'none';
+            document.body.appendChild(link);
+
+            const downloadButton = document.createElement('button');
+            downloadButton.className = 'download-sitemap-btn'; /* Using the new custom class */
+            downloadButton.textContent = 'Download Sitemap.xml';
+            downloadButton.onclick = () => {
+                link.click();
+            };
+            return downloadButton;
+        }
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            generateBtn.disabled = true;
+            generateBtn.textContent = 'Generating...';
+            resultDiv.style.display = 'none';
+            resultDiv.innerHTML = '';
+
+            const baseUrl = baseUrlInput.value.trim();
+            const urlsListValue = urlsListInput.value.trim();
+            const lastmodSetting = lastmodOptionInput.value;
+
+            if (!baseUrl) {
+                resultDiv.innerHTML = '<p style="color:red;">Please enter the main website URL.</p>';
+                resultDiv.style.display = 'block';
+                generateBtn.disabled = false;
+                generateBtn.textContent = 'Generate Sitemap';
+                return;
+            }
+
+            try { new URL(baseUrl); } catch (_) {
+                resultDiv.innerHTML = '<p style="color:red;">The main website URL is not valid.</p>';
+                resultDiv.style.display = 'block';
+                generateBtn.disabled = false; generateBtn.textContent = 'Generate Sitemap'; return;
+            }
+
+            const additionalUrls = urlsListValue ? urlsListValue.split('\n').map(url => url.trim()).filter(url => url) : [];
+
+            for (const addUrl of additionalUrls) {
+                try { new URL(addUrl); } catch (_) {
+                    resultDiv.innerHTML = `<p style="color:red;">One of the additional URLs is not valid: ${escapeXml(addUrl)}</p>`;
+                    resultDiv.style.display = 'block';
+                    generateBtn.disabled = false; generateBtn.textContent = 'Generate Sitemap'; return;
+                }
+            }
+
+            setTimeout(() => {
+                const sitemapContent = generateSitemapFromList(baseUrl, additionalUrls, lastmodSetting);
+
+                const pre = document.createElement('pre');
+                pre.className = 'result-code-block'; /* Using the new custom class */
+                pre.textContent = sitemapContent;
+
+                const heading = document.createElement('strong');
+                heading.className = "result-heading"; /* Using the new custom class */
+                heading.textContent = "Generated Sitemap:";
+
+                resultDiv.appendChild(heading);
+                resultDiv.appendChild(pre);
+                resultDiv.appendChild(createDownloadLink(sitemapContent));
+                resultDiv.style.display = 'block';
+
+                generateBtn.disabled = false;
+                generateBtn.textContent = 'Generate Sitemap';
+            }, 200);
+        });
+
+        document.querySelectorAll('.sidebar-menu').forEach(menu => {
+            let timeout;
+            menu.addEventListener('mouseenter', () => {
+                clearTimeout(timeout);
+                menu.classList.add('open');
+            });
+            menu.addEventListener('mouseleave', () => {
+                timeout = setTimeout(() => menu.classList.remove('open'), 150);
+            });
+        });
+    </script>
+      </main>
+    </div>
+</body>
+</html>

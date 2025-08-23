@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mooniverse Toolkit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+
+</head>
+<body>
+  <div class="flex-min-h-screen">
+    <!-- Sidebar -->
+   <aside class="sidebar1">
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <a href="Index.html">
+      <img src="./assets/img/Mooniverse-Logo1.png" style="max-width: 200px; height: auto;" />
+    </a>
+  </div>
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+    <!-- PDF Menu with hoverable submenu -->
+    <div class="sidebar-menu" data-menu>
+      <button class="sidebar-menu-btn" type="button">
+        <span>PDF</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+          <li><a href="MergePDF.html" class="sidebar-submenu-link">Merge PDF</a></li>
+          <li><a href="SplitPDF.html" class="sidebar-submenu-link">Split PDF</a></li>
+          <li><a href="OrganizePDF.html" class="sidebar-submenu-link">Organize PDF</a></li>
+          <li><a href="Removepages.html" class="sidebar-submenu-link">Remove Pages</a></li>
+          <li><a href="Extractpages.html" class="sidebar-submenu-link">Extract Pages</a></li>
+          <li><a href="PDFtoJPG.html" class="sidebar-submenu-link">PDF to JPG</a></li>
+          <li><a href="PDFtoPNG.html" class="sidebar-submenu-link">PDF to PNG</a></li>
+          <li><a href="SignPDF.html" class="sidebar-submenu-link">Sign PDF</a></li>
+          <li><a href="RotatePDF.html" class="sidebar-submenu-link">Rotate PDF</a></li>
+          <li><a href="Addpagenumbers.html" class="sidebar-submenu-link">Add Page Numbers</a></li>
+          <li><a href="ProtectPDF.html" class="sidebar-submenu-link">Protect PDF</a></li>
+          <li><a href="EXIFdata.html" class="sidebar-submenu-link">Remove EXIF Data</a></li>
+        </ul>
+      </div>
+    </div>
+     <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Image</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="Compressimage.html" class="sidebar-submenu-link">Compress Image</a></li>
+              <li><a href="Resizeimage.html" class="sidebar-submenu-link">Resize Image</a></li>
+              <li><a href="Cropimage.html" class="sidebar-submenu-link">Crop Image</a></li>
+              <li><a href="ConverttoJPG.html" class="sidebar-submenu-link">Convert to JPG</a></li>
+              <li><a href="JPGtoPDF.html" class="sidebar-submenu-link">JPG to PDF</a></li>
+              <li><a href="JPGtoPNG.html" class="sidebar-submenu-link">JPG to PNG</a></li>
+              <li><a href="UpscaleImage.html" class="sidebar-submenu-link">Upscale Image</a></li>
+              <li><a href="RotateImage.html" class="sidebar-submenu-link">Rotate Image</a></li>
+
+              <li><a href="HtmltoImage.html" class="sidebar-submenu-link">HTML to Image</a></li>
+              <li><a href="WatermarkRemoverImage.html" class="sidebar-submenu-link">Watermark Image</a></li>
+              <li><a href="Blurimage.html" class="sidebar-submenu-link">Blur Image</a></li>
+              <li><a href="PhotoEditor.html" class="sidebar-submenu-link">Photo Editor</a></li>
+              <li><a href="Bgremove.html" class="sidebar-submenu-link">Remove Background</a></li>
+              <li><a href="MemeGenerator.html" class="sidebar-submenu-link">Meme Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+    <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Viewer</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="JsonViewer.html" class="sidebar-submenu-link">JSON Viewer & Formatter</a></li>
+              <li><a href="CSVtotext.html" class="sidebar-submenu-link">CSV to Text</a></li>
+              <li><a href="VCFtotext.html" class="sidebar-submenu-link">VCF to Text</a></li>
+              <li><a href="VCFtoExcel.html" class="sidebar-submenu-link">VCF to Excel</a></li>
+               <li><a href="Textcompare.html" class="sidebar-submenu-link">Text Compare</a></li>
+        </ul>
+      </div>
+      </div>
+
+       <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Calculator</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="GSTCalculator.html" class="sidebar-submenu-link">GST Calculator - India</a></li>
+              <li><a href="TaxCalculator.html" class="sidebar-submenu-link">Tax Calculator</a></li>
+              <li><a href="LoanEMIcalculator.html" class="sidebar-submenu-link">Loan EMI Calculator</a></li>
+              <li><a href="PersonalLoancalculator.html" class="sidebar-submenu-link">Personal Loan Calculator</a></li>
+
+               <li><a href="ScientificCalculator.html" class="sidebar-submenu-link">Scientific Calculator</a></li>
+              <li><a href="PercentageCalculator.html" class="sidebar-submenu-link">Percentage Calculator</a></li>
+              <li><a href="CurrencyCalculator.html" class="sidebar-submenu-link">Currency Calculator</a></li>
+              <li><a href="Agecalculator.html" class="sidebar-submenu-link">Age Calculator</a></li>
+
+               <li><a href="TimeCalculator.html" class="sidebar-submenu-link">Time Calculator</a></li>
+              <li><a href="TimeDurationCalculator.html" class="sidebar-submenu-link">Time Duration Calculator</a></li>
+              <li><a href="ElectricityCalculator.html" class="sidebar-submenu-link">Electricity Calculator</a></li>
+              <li><a href="WeightCalculator.html" class="sidebar-submenu-link">Weight Calculator</a></li>
+
+              <li><a href="TimeZoneCalculator.html" class="sidebar-submenu-link">Time Zone Calculator</a></li>
+              <li><a href="ProbabilityCalculator.html" class="sidebar-submenu-link">Probability Calculator</a></li>
+        </ul>
+      </div>
+      </div>
+
+ <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>SEO</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="WordCounter.html" class="sidebar-submenu-link">Word counter</a></li>
+              <li><a href="FaviconGenerator.html" class="sidebar-submenu-link">Favicon generator</a></li>
+              <li><a href="SitemapGenerator.html" class="sidebar-submenu-link">Sitemap Generator</a></li>
+              <li><a href="RobotstxtGenerator.html" class="sidebar-submenu-link">Robots.txt Generator</a></li>
+
+              <li><a href="MetaTagGenerator.html" class="sidebar-submenu-link">Meta Tag Generator</a></li>
+              <li><a href="HtaccessGenerator.html" class="sidebar-submenu-link">.htaccess Generator</a></li>
+              <li><a href="StructuredDataGenerator.html" class="sidebar-submenu-link">Structured Data Generator</a></li>
+              <li><a href="OGtagsGenerator.html" class="sidebar-submenu-link">OG Tags Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Converters</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="Mp4toMp3.html" class="sidebar-submenu-link">MP4 to MP3</a></li>
+              <li><a href="WordtoPdf.html" class="sidebar-submenu-link">word to PDF</a></li>
+              <li><a href="XmltoJson.html" class="sidebar-submenu-link">XML to JSON</a></li>
+              <li><a href="JsontoXml.html" class="sidebar-submenu-link">JSON to XML</a></li>
+
+                <li><a href="JsontoCsv.html" class="sidebar-submenu-link">JSON to CSV</a></li>
+              <li><a href="JsontoExcel.html" class="sidebar-submenu-link">JSON to Excel</a></li>
+              <li><a href="TexttoHtml.html" class="sidebar-submenu-link">Text to HTMl</a></li>
+              <li><a href="PpttoPdf.html" class="sidebar-submenu-link">Powerpoint to PDF</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Downloader</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu1" data-submenu>
+        <ul class="sidebar-submenu-list1 sidebar-submenu1-grid3">
+          <li><a href="InstaReels.html" class="sidebar-submenu-link1">Instagram Reels Downloader</a></li>
+              <li><a href="YoutubeVideoDownloader.html" class="sidebar-submenu-link1">Youtube Videos Downloader</a></li>
+              <li><a href="InstaPost.html" class="sidebar-submenu-link1">Instagram Post Downloader</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Minifier</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+           <li><a href="Htmlminifier.html" class="sidebar-submenu-link">HTML Minifier</a></li>
+              <li><a href="Cssminifier.html" class="sidebar-submenu-link">CSS Minifier</a></li>
+              <li><a href="JsMinifier.html" class="sidebar-submenu-link">JS Minifier</a></li>
+              <li><a href="HtmlUnminifier.html" class="sidebar-submenu-link">HTML Unminifier</a></li>
+               <li><a href="Cssunminifier.html" class="sidebar-submenu-link">CSS Unminifier</a></li>
+              <li><a href="JsUnminifier.html" class="sidebar-submenu-link">JS Unminifier</a></li>
+        </ul>
+      </div>
+      </div>
+
+  </nav>
+</aside>
+
+    <!-- Main Content -->
+     <main class="main-content1">
+
+      <div class="tool-card1">
+        <div class="tool-header1">
+          <h2>Remove Pages from PDF</h2>
+          <p>Remove selected pages from your PDF instantly by clicking on page previews.
+            Your file stays private, as all processing is done locally in your browser.</p>
+        </div>
+        <div x-data="removePagesTool()" class="tool-wrapper">
+          <!-- Drag & Drop Area -->
+          <div
+            class="drop-area1"
+            :class="{'active': isDragging}"
+            @dragover.prevent="isDragging = true"
+            @dragleave.prevent="isDragging = false"
+            @drop.prevent="handleDrop($event)"
+          >
+            <div class="flex-col-center">
+              <span class="emoji-icon">⬆️</span> <span class="text-gray-500" x-text="isDragging ? 'Drop PDFs here...' : 'Drag & drop PDFs here'"></span>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="btn-group">
+            <template x-if="files.length === 0">
+              <button class="butn" type="button" @click="triggerBrowse">📁 Browse File</button>
+            </template>
+            <template x-if="files.length > 0">
+              <button
+                class="butn btn-icon-spacing"
+                type="button"
+                @click="triggerBrowse"
+              >
+                <img src="./assets/img/Add-sign.png" height="auto" width="11.5px">
+                Change PDF
+              </button>
+            </template>
+            <button
+              class="butn btn-secondary1 btn-icon-spacing text-white"
+              type="button"
+              @click="showUrlInput = !showUrlInput"
+            >
+              <img src="./assets/img/Add-from-url.png" height="13px" width="13px">Add from URL
+            </button>
+          </div>
+
+          <!-- File Input -->
+          <input type="file" accept="application/pdf" class="hidden-file-input" x-ref="fileInput" @change="handleFileChange($event)">
+
+          <!-- URL Input -->
+          <div class="url-input-group" x-show="showUrlInput" x-transition>
+            <input type="text" class="url-input" placeholder="Paste PDF URL here" x-model="urlInput">
+            <button class="btn-1" type="button" @click="addFromUrl" :disabled="fetchingUrl || processing">
+              <span x-show="fetchingUrl"><i class="fas fa-spinner fa-spin"></i> Fetching...</span>
+              <span x-show="!fetchingUrl">Get File</span>
+            </button>
+          </div>
+
+          <!-- File List (shows only the current single file) -->
+          <template x-if="files.length === 1">
+            <ul class="file-list">
+              <template x-for="(file, idx) in files" :key="idx">
+                <li class="file-item">
+                  <div>
+                    <span x-text="file.name" class="file-item-name"></span>
+                    (<span x-text="pageCount > 0 ? pageCount + ' page(s)' : 'loading info...'"></span>)
+                  </div>
+                  <button class="remove-file-btn" @click="removeFile(idx)" title="Remove file">✕</button>
+                </li>
+              </template>
+            </ul>
+          </template>
+
+          <!-- Loading Indicator for Thumbnails -->
+          <template x-if="files.length === 1 && processing && pageThumbnails.length === 0 && !error">
+            <div class="loading-indicator">
+              <i class="fas fa-spinner fa-spin spinner-icon"></i>
+              <p class="text-gray-500 mt-2">Loading page previews...</p>
+            </div>
+          </template>
+
+          <!-- Page Selection with Thumbnails -->
+          <template x-if="files.length === 1 && pageThumbnails.length > 0 && !processing">
+            <div class="page-selection-section">
+              <div class="page-selection-header">Select pages to <span class="text-red-600">remove</span> (click on a page):</div>
+              <div class="thumbnail-grid">
+                <template x-for="thumbnail in pageThumbnails" :key="thumbnail.pageNum">
+                  <div
+                    class="thumbnail-item"
+                    :class="{ 'selected': thumbnail.selected }"
+                    @click="togglePageSelection(thumbnail)"
+                    :title="'Page ' + thumbnail.pageNum + (thumbnail.selected ? ' (Selected for removal)' : ' (Click to select for removal)')"
+                  >
+                    <img :src="thumbnail.dataUrl" :alt="'Page ' + thumbnail.pageNum" class="thumbnail-image">
+                    <div class="thumbnail-label"
+                         :class="{'selected': thumbnail.selected}">
+                      Page <span x-text="thumbnail.pageNum"></span>
+                    </div>
+                    <div x-show="thumbnail.selected"
+                         class="selection-badge">
+                      <i class="fas fa-times"></i>
+                    </div>
+                  </div>
+                </template>
+              </div>
+              <div class="page-summary-text">
+                <span x-text="pagesToRemove.length"></span> page(s) selected for removal.
+                (<span x-text="pageCount - pagesToRemove.length"></span> page(s) will be kept).
+              </div>
+            </div>
+          </template>
+
+          <!-- Remove Button -->
+          <template x-if="files.length === 1 && pageThumbnails.length > 0 && !processing">
+            <button
+              class="butn-3 w-full sm-w-auto"
+              :disabled="processing || pagesToRemove.length === 0 || (pagesToRemove.length === pageCount && pageCount > 0)"
+              @click="removePages"
+            >
+              <span>Remove <span x-text="pagesToRemove.length"></span> Selected Page(s)</span>
+            </button>
+            <div x-show="pagesToRemove.length === pageCount && pageCount > 0 && !processing" class="text-red-600 text-sm mt-2">
+              Cannot remove all pages. Please unselect at least one page to keep.
+            </div>
+          </template>
+
+          <!-- Processing PDF Indicator -->
+          <template x-if="processing && pageThumbnails.length > 0 && !error">
+            <div class="processing-message">
+              <i class="fas fa-spinner fa-spin spinner-icon"></i>
+              <p class="text-gray-500 mt-2">Processing PDF and removing pages...</p>
+            </div>
+          </template>
+
+
+          <!-- Download Link -->
+          <template x-if="resultUrl && !error">
+            <div class="download-section">
+              <h3 class="download-title">Processing Complete!</h3>
+              <p class="download-text">Your new PDF with removed pages is ready for download.</p>
+              <a :href="resultUrl" download="removed-pages.pdf" class="btn btn-cloud btn-icon-spacing w-full sm-w-auto">
+                <i class="fas fa-download"></i> Download PDF
+              </a>
+            </div>
+          </template>
+
+          <!-- Error Message -->
+          <template x-if="error">
+            <div class="error-message-display" x-text="error"></div>
+          </template>
+        </div>
+      </div>
+
+      <div class="tool-footer">
+        <div class="footer-buttons">
+          <a href="MergePDF.html" class="footer-btn"> Merge PDF</a>
+          <a href="SplitPDF.html" class="footer-btn"> Split PDF </a>
+          <a href="OrganizePDF.html" class="footer-btn"> Organize PDF </a>
+          <a href="Extractpages.html" class="footer-btn"> Extract Pages</a>
+          <a href="PDFtoJPG.html" class="footer-btn"> PDF to JPG</a>
+          <a href="PDFtoPNG.html" class="footer-btn"> PDF to PNG</a>
+          <a href="SignPDF.html" class="footer-btn"> Sign PDF</a>
+          <a href="RotatePDF.html" class="footer-btn"> Rotate PDF</a>
+          <a href="Addpagenumbers.html" class="footer-btn"> Add Page Numbers</a>
+          <a href="ProtectPDF.html" class="footer-btn"> Protect PDF</a>
+          <a href="EXIFdata.html" class="footer-btn"> Remove EXIF Data</a>
+        </div>
+      </div>
+ <script defer src="assets/js/alpine.min.js"></script>
+  <script defer src="assets/js/pdf-lib.min.js"></script>
+  <script defer src="assets/js/jszip.min.js"></script>
+  <script defer src="assets/js/pdf.min.js"></script>
+  <script defer src="assets/js/pdf.worker.min.js"></script>
+      <script>
+        function removePagesTool() {
+          return {
+            files: [], // Stores the single PDF file object
+            resultUrl: '',
+            processing: false, // General processing flag (thumbnails or PDF modification)
+            error: '',
+            isDragging: false,
+            showUrlInput: false,
+            urlInput: '',
+            fetchingUrl: false, // Specifically for URL fetching state
+            pageCount: 0,
+            pagesToRemove: [], // Array of 0-based page indices to remove
+            pageThumbnails: [], // Array of { pageNum (1-based), pageIndex (0-based), dataUrl, selected }
+
+            triggerBrowse() {
+                this.$refs.fileInput.value = null; // Reset to allow selecting the same file again
+                this.$refs.fileInput.click();
+            },
+
+            handleFileChange(event) {
+                const newFiles = event.target.files ? Array.from(event.target.files) : [];
+                this.processSelectedFiles(newFiles);
+            },
+
+            async handleDrop(event) {
+              this.isDragging = false;
+              const newFiles = event.dataTransfer && event.dataTransfer.files ? Array.from(event.dataTransfer.files) : [];
+              this.processSelectedFiles(newFiles);
+            },
+
+            async processSelectedFiles(selectedFiles) {
+                this.resetState();
+                const pdfFiles = selectedFiles.filter(f => f.type === "application/pdf");
+
+                if (pdfFiles.length === 0 && selectedFiles.length > 0) {
+                    this.error = "Please select a PDF file.";
+                    return;
+                }
+                if (pdfFiles.length > 0) {
+                    this.files = [pdfFiles[0]]; // Only allow one file
+                    await this.loadPdfAndGenerateThumbnails();
+                }
+            },
+
+            resetState() {
+                this.error = '';
+                this.resultUrl = '';
+                this.pageCount = 0;
+                this.pagesToRemove = [];
+                this.pageThumbnails = [];
+                this.processing = false; // Ensure processing is reset
+                // Don't reset this.files here, it.s managed by processSelectedFiles
+            },
+
+            removeFile(idx) {
+              this.files.splice(idx, 1);
+              this.resetState(); // Clear all related data
+              this.$refs.fileInput.value = ""; // Reset file input
+            },
+
+            async addFromUrl() {
+              this.resetState();
+              if (!this.urlInput.trim()) {
+                this.error = "Please enter a PDF URL.";
+                return;
+              }
+              this.fetchingUrl = true;
+              this.processing = true; // Show general loading state
+
+              try {
+                let url = this.urlInput.trim();
+                // Basic protocol check, add https if missing
+                if (!/^https?:\/\//i.test(url) && !/^http?:\/\//i.test(url)) {
+                      url = "https://" + url;
+                }
+
+
+                let response;
+                try {
+                  response = await fetch(url, { mode: 'cors' }); // Try direct fetch first
+                  if (!response.ok) throw new Error(`Direct fetch failed: ${response.status} ${response.statusText}`);
+                } catch (e) {
+                  console.warn("Direct fetch failed, trying proxy:", e.message);
+                  const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url);
+                  response = await fetch(proxyUrl);
+                  if (!response.ok) throw new Error(`Proxy fetch failed: ${response.status} ${response.statusText}`);
+                }
+
+                const blob = await response.blob();
+                if (!blob.type.includes("pdf")) {
+                    throw new Error("Downloaded file is not a PDF. Content-Type: " + blob.type);
+                }
+
+                // Try to get a filename from URL
+                let fileName = 'downloaded.pdf';
+                try {
+                    const path = new URL(url).pathname;
+                    const nameFromPath = path.substring(path.lastIndexOf('/') + 1);
+                    if (nameFromPath && nameFromPath.toLowerCase().endsWith('.pdf')) {
+                        fileName = nameFromPath;
+                    }
+                } catch (e) { console.warn("Could not parse filename from URL", e); }
+
+
+                this.files = [new File([blob], fileName, { type: 'application/pdf' })];
+                await this.loadPdfAndGenerateThumbnails(); // This will set processing to false at the end
+
+                this.urlInput = '';
+                this.showUrlInput = false;
+              } catch (e) {
+                this.error = "Failed to fetch PDF from URL. " + e.message;
+                this.files = []; // Clear files array on error
+                this.processing = false; // Ensure processing is reset on error
+              } finally {
+                this.fetchingUrl = false;
+              }
+            },
+
+            async loadPdfAndGenerateThumbnails() {
+              this.resetState(); // Clear previous PDF's data
+              if (this.files.length !== 1) return;
+
+              this.processing = true;
+              const file = this.files[0];
+
+              try {
+                const buffer = await file.arrayBuffer();
+
+                // Set workerSrc for pdf.js if not already set
+                if (typeof pdfjsLib !== 'undefined' && !pdfjsLib.GlobalWorkerOptions.workerSrc) {
+                    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+                }
+
+                const loadingTask = pdfjsLib.getDocument({ data: new Uint8Array(buffer) });
+                const pdfDocJs = await loadingTask.promise;
+
+                this.pageCount = pdfDocJs.numPages;
+                if (this.pageCount === 0) {
+                    this.error = "The PDF file appears to be empty (0 pages).";
+                    this.files = []; // Remove the problematic file
+                    this.processing = false;
+                    return;
+                }
+
+                const thumbs = [];
+                 const scale = 1.5;  // or 2 for sharper previews
+                        const quality = 1.0; // maximum preview clarity
+
+                for (let i = 1; i <= pdfDocJs.numPages; i++) {
+                  const page = await pdfDocJs.getPage(i);
+                  const viewport = page.getViewport({ scale });
+                  const canvas = document.createElement('canvas');
+                  const context = canvas.getContext('2d');
+                  canvas.height = viewport.height;
+                  canvas.width = viewport.width;
+
+                  await page.render({ canvasContext: context, viewport: viewport }).promise;
+                  thumbs.push({
+                    pageNum: i, // 1-based for display
+                    pageIndex: i - 1, // 0-based for pdf-lib & pagesToRemove
+                    dataUrl: canvas.toDataURL('image/jpeg', quality),
+                    selected: false
+                  });
+                }
+                this.pageThumbnails = thumbs;
+
+              } catch (e) {
+                console.error("Error loading PDF/generating thumbnails:", e);
+                this.error = "Failed to read PDF or generate previews. The file might be corrupted or password-protected. " + (e.message || '');
+                this.files = []; // Clear problematic file
+              } finally {
+                this.processing = false;
+              }
+            },
+
+            togglePageSelection(thumbnail) {
+                if (this.processing) return; // Don't allow selection change during processing
+                thumbnail.selected = !thumbnail.selected;
+                if (thumbnail.selected) {
+                    if (!this.pagesToRemove.includes(thumbnail.pageIndex)) {
+                        this.pagesToRemove.push(thumbnail.pageIndex);
+                    }
+                } else {
+                    this.pagesToRemove = this.pagesToRemove.filter(pIdx => pIdx !== thumbnail.pageIndex);
+                }
+            },
+
+            async removePages() {
+              if (this.pagesToRemove.length === 0) {
+                this.error = "No pages selected for removal.";
+                return;
+              }
+              if (this.pagesToRemove.length === this.pageCount && this.pageCount > 0) {
+                this.error = "Cannot remove all pages. At least one page must remain in the PDF.";
+                return;
+              }
+
+              this.processing = true;
+              this.error = '';
+              this.resultUrl = '';
+
+              try {
+                const file = this.files[0];
+                const buffer = await file.arrayBuffer();
+                const pdfDoc = await PDFLib.PDFDocument.load(buffer, { ignoreEncryption: true });
+
+                const pagesToRemoveSorted = [...this.pagesToRemove].map(Number).sort((a, b) => b - a);
+
+                for (const pageIdx of pagesToRemoveSorted) {
+                  if (pageIdx >= 0 && pageIdx < pdfDoc.getPageCount()) { // Check index bounds before removing
+                      pdfDoc.removePage(pageIdx);
+                  }
+                }
+
+                if (pdfDoc.getPageCount() === 0) {
+                    throw new Error("Resulting PDF would have no pages. Please ensure at least one page is kept.");
+                }
+
+                const newBytes = await pdfDoc.save();
+                const blob = new Blob([newBytes], { type: "application/pdf" });
+                this.resultUrl = URL.createObjectURL(blob);
+
+                // Optionally, reset selections for the current file if user wants to perform another op
+                // this.pagesToRemove = [];
+                // this.pageThumbnails.forEach(t => t.selected = false);
+                // For now, showing download link is the primary next step.
+
+              } catch (e) {
+                console.error("Error removing pages:", e);
+                this.error = "Failed to remove pages. " + e.message;
+              } finally {
+                this.processing = false;
+              }
+            }
+          }
+        }
+
+        document.querySelectorAll('.sidebar-menu').forEach(menu => {
+          let timeout;
+          menu.addEventListener('mouseenter', () => {
+            clearTimeout(timeout);
+            menu.classList.add('open');
+          });
+          menu.addEventListener('mouseleave', () => {
+            timeout = setTimeout(() => menu.classList.remove('open'), 150);
+          });
+        });
+      </script>
+
+    </main>
+  </div>
+</body>
+</html>

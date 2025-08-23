@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mooniverse Toolkit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    </head>
+<body class="font-sans">
+    <div class="flex-min-h-screen">
+    <!-- Sidebar -->
+     <aside class="sidebar1">
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <a href="Index.html">
+      <img src="./assets/img/Mooniverse-Logo1.png" style="max-width: 200px; height: auto;" />
+    </a>
+  </div>
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+    <!-- PDF Menu with hoverable submenu -->
+    <div class="sidebar-menu" data-menu>
+      <button class="sidebar-menu-btn" type="button">
+        <span>PDF</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+          <li><a href="MergePDF.html" class="sidebar-submenu-link">Merge PDF</a></li>
+          <li><a href="SplitPDF.html" class="sidebar-submenu-link">Split PDF</a></li>
+          <li><a href="OrganizePDF.html" class="sidebar-submenu-link">Organize PDF</a></li>
+          <li><a href="Removepages.html" class="sidebar-submenu-link">Remove Pages</a></li>
+          <li><a href="Extractpages.html" class="sidebar-submenu-link">Extract Pages</a></li>
+          <li><a href="PDFtoJPG.html" class="sidebar-submenu-link">PDF to JPG</a></li>
+          <li><a href="PDFtoPNG.html" class="sidebar-submenu-link">PDF to PNG</a></li>
+          <li><a href="SignPDF.html" class="sidebar-submenu-link">Sign PDF</a></li>
+          <li><a href="RotatePDF.html" class="sidebar-submenu-link">Rotate PDF</a></li>
+          <li><a href="Addpagenumbers.html" class="sidebar-submenu-link">Add Page Numbers</a></li>
+          <li><a href="ProtectPDF.html" class="sidebar-submenu-link">Protect PDF</a></li>
+          <li><a href="EXIFdata.html" class="sidebar-submenu-link">Remove EXIF Data</a></li>
+        </ul>
+      </div>
+    </div>
+     <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Image</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="Compressimage.html" class="sidebar-submenu-link">Compress Image</a></li>
+              <li><a href="Resizeimage.html" class="sidebar-submenu-link">Resize Image</a></li>
+              <li><a href="Cropimage.html" class="sidebar-submenu-link">Crop Image</a></li>
+              <li><a href="ConverttoJPG.html" class="sidebar-submenu-link">Convert to JPG</a></li>
+              <li><a href="JPGtoPDF.html" class="sidebar-submenu-link">JPG to PDF</a></li>
+              <li><a href="JPGtoPNG.html" class="sidebar-submenu-link">JPG to PNG</a></li>
+              <li><a href="UpscaleImage.html" class="sidebar-submenu-link">Upscale Image</a></li>
+              <li><a href="RotateImage.html" class="sidebar-submenu-link">Rotate Image</a></li>
+
+              <li><a href="HtmltoImage.html" class="sidebar-submenu-link">HTML to Image</a></li>
+              <li><a href="WatermarkRemoverImage.html" class="sidebar-submenu-link">Watermark Image</a></li>
+              <li><a href="Blurimage.html" class="sidebar-submenu-link">Blur Image</a></li>
+              <li><a href="PhotoEditor.html" class="sidebar-submenu-link">Photo Editor</a></li>
+              <li><a href="Bgremove.html" class="sidebar-submenu-link">Remove Background</a></li>
+              <li><a href="MemeGenerator.html" class="sidebar-submenu-link">Meme Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+    <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Viewer</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="JsonViewer.html" class="sidebar-submenu-link">JSON Viewer & Formatter</a></li>
+              <li><a href="CSVtotext.html" class="sidebar-submenu-link">CSV to Text</a></li>
+              <li><a href="VCFtotext.html" class="sidebar-submenu-link">VCF to Text</a></li>
+              <li><a href="VCFtoExcel.html" class="sidebar-submenu-link">VCF to Excel</a></li>
+               <li><a href="Textcompare.html" class="sidebar-submenu-link">Text Compare</a></li>
+        </ul>
+      </div>
+      </div>
+
+       <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Calculator</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="GSTCalculator.html" class="sidebar-submenu-link">GST Calculator - India</a></li>
+              <li><a href="TaxCalculator.html" class="sidebar-submenu-link">Tax Calculator</a></li>
+              <li><a href="LoanEMIcalculator.html" class="sidebar-submenu-link">Loan EMI Calculator</a></li>
+              <li><a href="PersonalLoancalculator.html" class="sidebar-submenu-link">Personal Loan Calculator</a></li>
+
+               <li><a href="ScientificCalculator.html" class="sidebar-submenu-link">Scientific Calculator</a></li>
+              <li><a href="PercentageCalculator.html" class="sidebar-submenu-link">Percentage Calculator</a></li>
+              <li><a href="CurrencyCalculator.html" class="sidebar-submenu-link">Currency Calculator</a></li>
+              <li><a href="Agecalculator.html" class="sidebar-submenu-link">Age Calculator</a></li>
+
+               <li><a href="TimeCalculator.html" class="sidebar-submenu-link">Time Calculator</a></li>
+              <li><a href="TimeDurationCalculator.html" class="sidebar-submenu-link">Time Duration Calculator</a></li>
+              <li><a href="ElectricityCalculator.html" class="sidebar-submenu-link">Electricity Calculator</a></li>
+              <li><a href="WeightCalculator.html" class="sidebar-submenu-link">Weight Calculator</a></li>
+
+              <li><a href="TimeZoneCalculator.html" class="sidebar-submenu-link">Time Zone Calculator</a></li>
+              <li><a href="ProbabilityCalculator.html" class="sidebar-submenu-link">Probability Calculator</a></li>
+        </ul>
+      </div>
+      </div>
+
+ <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>SEO</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="WordCounter.html" class="sidebar-submenu-link">Word counter</a></li>
+              <li><a href="FaviconGenerator.html" class="sidebar-submenu-link">Favicon generator</a></li>
+              <li><a href="SitemapGenerator.html" class="sidebar-submenu-link">Sitemap Generator</a></li>
+              <li><a href="RobotstxtGenerator.html" class="sidebar-submenu-link">Robots.txt Generator</a></li>
+
+              <li><a href="MetaTagGenerator.html" class="sidebar-submenu-link">Meta Tag Generator</a></li>
+              <li><a href="HtaccessGenerator.html" class="sidebar-submenu-link">.htaccess Generator</a></li>
+              <li><a href="StructuredDataGenerator.html" class="sidebar-submenu-link">Structured Data Generator</a></li>
+              <li><a href="OGtagsGenerator.html" class="sidebar-submenu-link">OG Tags Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Converters</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="Mp4toMp3.html" class="sidebar-submenu-link">MP4 to MP3</a></li>
+              <li><a href="WordtoPdf.html" class="sidebar-submenu-link">word to PDF</a></li>
+              <li><a href="XmltoJson.html" class="sidebar-submenu-link">XML to JSON</a></li>
+              <li><a href="JsontoXml.html" class="sidebar-submenu-link">JSON to XML</a></li>
+
+                <li><a href="JsontoCsv.html" class="sidebar-submenu-link">JSON to CSV</a></li>
+              <li><a href="JsontoExcel.html" class="sidebar-submenu-link">JSON to Excel</a></li>
+              <li><a href="TexttoHtml.html" class="sidebar-submenu-link">Text to HTMl</a></li>
+              <li><a href="PpttoPdf.html" class="sidebar-submenu-link">Powerpoint to PDF</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Downloader</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu1" data-submenu>
+        <ul class="sidebar-submenu-list1 sidebar-submenu1-grid3">
+          <li><a href="InstaReels.html" class="sidebar-submenu-link1">Instagram Reels Downloader</a></li>
+              <li><a href="YoutubeVideoDownloader.html" class="sidebar-submenu-link1">Youtube Videos Downloader</a></li>
+              <li><a href="InstaPost.html" class="sidebar-submenu-link1">Instagram Post Downloader</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Minifier</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+           <li><a href="Htmlminifier.html" class="sidebar-submenu-link">HTML Minifier</a></li>
+              <li><a href="Cssminifier.html" class="sidebar-submenu-link">CSS Minifier</a></li>
+              <li><a href="JsMinifier.html" class="sidebar-submenu-link">JS Minifier</a></li>
+              <li><a href="HtmlUnminifier.html" class="sidebar-submenu-link">HTML Unminifier</a></li>
+               <li><a href="Cssunminifier.html" class="sidebar-submenu-link">CSS Unminifier</a></li>
+              <li><a href="JsUnminifier.html" class="sidebar-submenu-link">JS Unminifier</a></li>
+        </ul>
+      </div>
+      </div>
+
+  </nav>
+</aside>
+    <!-- Main Content -->
+    <main class="main-content1">
+            <div
+                aria-label="XML to JSON Converter Tool"
+                class="tool-card1"
+                role="main"
+            >
+                <div class="tool-header1">
+                    <h2>XML to JSON Converter</h2>
+                </div>
+
+                <div
+                    id="dropArea"
+                    class="drop-area1"
+                    tabindex="0"
+                    aria-label="Drag and drop your XML file here or click to browse"
+                >
+                    <i class="fas fa-cloud-upload-alt upload-icon" aria-hidden="true"></i>
+                    <p>Drag & drop your XML file here or click to browse</p>
+                    <input
+                        type="file"
+                        id="fileInput"
+                        accept=".xml,text/xml,application/xml"
+                        hidden
+                        aria-label="Select XML file"
+                    />
+                </div>
+
+                <label
+                    class="butn"
+                    for="fileInput"
+                    id="browseBtn"
+                    role="button"
+                    tabindex="0"
+                >
+                    📁 Browse Files
+                </label>
+
+                <div
+                    id="filePreview"
+                    class="file-list"
+                    aria-live="polite"
+                ></div>
+
+                <button
+                    class="butn btn-merge"
+                    id="convertBtn"
+                    disabled
+                    aria-disabled="true"
+                    type="button"
+                    style="display: none;" >
+                    <i class="fas fa-file-code"></i> Convert to JSON
+                </button>
+
+                <a
+                    id="downloadLink"
+                    class="butn-2"
+                    download
+                    aria-label="Download converted JSON"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fas fa-download"></i> Download JSON
+                </a>
+            </div>
+
+            <div class="tool-footer">
+                <div class="footer-buttons">
+                    <a href="Mp4toMp3.html" class="footer-btn"> MP4 to MP3 </a>
+                    <a href="WordtoPdf.html" class="footer-btn"> Word to Pdf</a>
+                    <a href="JsontoXml.html" class="footer-btn"> JSON to XML </a>
+                    <a href="JsontoCsv.html" class="footer-btn"> JSON to CSV </a>
+                    <a href="JsontoExcel.html" class="footer-btn"> JSON to Excel </a>
+                    <a href="TexttoHtml.html" class="footer-btn"> Text to HTML</a>
+                    <a href="PpttoPdf.html" class="footer-btn"> Powerpoint to PDF</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="messageBox" class="message-box"></div>
+
+    <script>
+        const dropArea = document.getElementById("dropArea");
+        const fileInput = document.getElementById("fileInput");
+        const filePreview = document.getElementById("filePreview");
+        const convertBtn = document.getElementById("convertBtn");
+        const downloadLink = document.getElementById("downloadLink");
+
+        let selectedFile = null;
+
+        // Function to show custom messages
+        function showMessage(message, type = 'success') {
+            const messageBox = document.getElementById('messageBox');
+            messageBox.textContent = message;
+            messageBox.className = 'message-box'; // Reset classes
+            if (type === 'error') {
+                messageBox.classList.add('error');
+            } else if (type === 'warning') {
+                messageBox.classList.add('warning');
+            } else {
+                messageBox.classList.add('success');
+            }
+            messageBox.style.display = 'block';
+            setTimeout(() => {
+                messageBox.style.display = 'none';
+            }, 3000);
+        }
+
+        dropArea.addEventListener("click", () => fileInput.click());
+        dropArea.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                fileInput.click();
+            }
+        });
+
+        dropArea.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            dropArea.classList.add("active");
+        });
+        dropArea.addEventListener("dragleave", (e) => {
+            e.preventDefault();
+            dropArea.classList.remove("active");
+        });
+        dropArea.addEventListener("drop", (e) => {
+            e.preventDefault();
+            dropArea.classList.remove("active");
+            if (e.dataTransfer.files.length > 0) {
+                handleFile(e.dataTransfer.files[0]);
+            }
+        });
+
+        fileInput.addEventListener("change", (e) => {
+            if (e.target.files.length > 0) {
+                handleFile(e.target.files[0]);
+            }
+        });
+
+        function handleFile(file) {
+            if (!file || !file.name.match(/\.(xml)$/i)) {
+                showMessage("Please upload a valid XML file (.xml only)", "error");
+                filePreview.style.display = "none"; // Hide preview if invalid
+                convertBtn.style.display = "none"; // HIDE: Hide the convert button if the file is invalid
+                return;
+            }
+            selectedFile = file;
+            filePreview.style.display = "block";
+            filePreview.textContent = `Selected file: ${file.name}`;
+            convertBtn.disabled = false;
+            convertBtn.setAttribute("aria-disabled", "false");
+            convertBtn.style.display = "inline-flex"; // SHOW: Make the convert button visible
+            downloadLink.style.display = "none";
+            downloadLink.href = "";
+            showMessage(`File "${file.name}" selected.`, "success");
+        }
+
+        // Simple XML to JSON converter
+        function xmlToJson(xml) {
+            let obj = {};
+
+            if (xml.nodeType === 1) {
+                // element
+                if (xml.attributes.length > 0) {
+                    obj["@attributes"] = {};
+                    for (let j = 0; j < xml.attributes.length; j++) {
+                        const attribute = xml.attributes.item(j);
+                        obj["@attributes"][attribute.nodeName] = attribute.nodeValue;
+                    }
+                }
+            } else if (xml.nodeType === 3) {
+                // text
+                const textContent = xml.nodeValue.trim();
+                // If textContent is empty, return an empty string, not an empty object
+                return textContent === "" ? "" : textContent;
+            }
+
+            // do children
+            if (xml.hasChildNodes()) {
+                for (let i = 0; i < xml.childNodes.length; i++) {
+                    const item = xml.childNodes.item(i);
+                    const nodeName = item.nodeName;
+                    const jsonContent = xmlToJson(item);
+                    
+                    // Only add if jsonContent is not an empty string (from text nodes)
+                    if (typeof jsonContent === 'string' && jsonContent === '') {
+                        continue;
+                    }
+
+                    if (obj[nodeName] === undefined) {
+                        obj[nodeName] = jsonContent;
+                    } else {
+                        if (!Array.isArray(obj[nodeName])) {
+                            obj[nodeName] = [obj[nodeName]];
+                        }
+                        obj[nodeName].push(jsonContent);
+                    }
+                }
+            }
+
+            // If object only has one text node and no attributes, simplify it
+            if (
+                Object.keys(obj).length === 1 &&
+                obj["#text"] !== undefined &&
+                typeof obj["#text"] === "string" &&
+                obj["@attributes"] === undefined
+            ) {
+                return obj["#text"];
+            }
+
+            return obj;
+        }
+
+
+        convertBtn.addEventListener("click", async () => {
+            if (!selectedFile) {
+                showMessage("No file selected. Please select an XML file first.", "warning");
+                return;
+            }
+
+            convertBtn.disabled = true;
+            convertBtn.setAttribute("aria-disabled", "true");
+            convertBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Converting...';
+
+            downloadLink.style.display = "none";
+            downloadLink.href = "";
+
+            try {
+                const text = await selectedFile.text();
+
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(text, "application/xml");
+
+                // Check for parsererror
+                if (xmlDoc.getElementsByTagName("parsererror").length > 0) {
+                    showMessage("Invalid XML file. Please upload a well-formed XML.", "error");
+                    throw new Error("Invalid XML");
+                }
+
+                // Get the root element for conversion, skipping #document and #text
+                let rootElement = null;
+                for (let i = 0; i < xmlDoc.childNodes.length; i++) {
+                    if (xmlDoc.childNodes[i].nodeType === 1) { // Node.ELEMENT_NODE
+                        rootElement = xmlDoc.childNodes[i];
+                        break;
+                    }
+                }
+
+                if (!rootElement) {
+                    showMessage("No root element found in XML. Please upload a valid XML file.", "error");
+                    throw new Error("No root element");
+                }
+
+                const jsonObj = xmlToJson(rootElement); // Pass the root element
+
+                const jsonString = JSON.stringify(jsonObj, null, 2);
+
+                filePreview.textContent = jsonString; // Display formatted JSON in preview
+
+                const jsonBlob = new Blob([jsonString], { type: "application/json" });
+                const jsonUrl = URL.createObjectURL(jsonBlob);
+
+                downloadLink.href = jsonUrl;
+                downloadLink.download = selectedFile.name.replace(/\.(xml)$/i, ".json");
+                downloadLink.style.display = "inline-flex";
+                downloadLink.focus();
+                showMessage("XML converted to JSON successfully! Download available.", "success");
+
+            } catch (error) {
+                showMessage("Conversion failed. " + (error.message || "An unknown error occurred."), "error");
+                console.error(error);
+            } finally {
+                convertBtn.disabled = false;
+                convertBtn.setAttribute("aria-disabled", "false");
+                convertBtn.innerHTML = '<i class="fas fa-file-code"></i> Convert to JSON';
+            }
+        });
+        
+        document.querySelectorAll('.sidebar-menu').forEach(menu => {
+            let timeout;
+            menu.addEventListener('mouseenter', () => {
+                clearTimeout(timeout);
+                menu.classList.add('open');
+            });
+            menu.addEventListener('mouseleave', () => {
+                timeout = setTimeout(() => menu.classList.remove('open'), 150);
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mooniverse Toolkit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  
+</head>
+<body>
+  <div class="flex-min-h-screen">
+    <!-- Sidebar -->
+   <aside class="sidebar1">
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <a href="Index.html">
+      <img src="./assets/img/Mooniverse-Logo1.png" style="max-width: 200px; height: auto;" />
+    </a>
+  </div>
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+    <!-- PDF Menu with hoverable submenu -->
+    <div class="sidebar-menu" data-menu>
+      <button class="sidebar-menu-btn" type="button">
+        <span>PDF</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+          <li><a href="MergePDF.html" class="sidebar-submenu-link">Merge PDF</a></li>
+          <li><a href="SplitPDF.html" class="sidebar-submenu-link">Split PDF</a></li>
+          <li><a href="OrganizePDF.html" class="sidebar-submenu-link">Organize PDF</a></li>
+          <li><a href="Removepages.html" class="sidebar-submenu-link">Remove Pages</a></li>
+          <li><a href="Extractpages.html" class="sidebar-submenu-link">Extract Pages</a></li>
+          <li><a href="PDFtoJPG.html" class="sidebar-submenu-link">PDF to JPG</a></li>
+          <li><a href="PDFtoPNG.html" class="sidebar-submenu-link">PDF to PNG</a></li>
+          <li><a href="SignPDF.html" class="sidebar-submenu-link">Sign PDF</a></li>
+          <li><a href="RotatePDF.html" class="sidebar-submenu-link">Rotate PDF</a></li>
+          <li><a href="Addpagenumbers.html" class="sidebar-submenu-link">Add Page Numbers</a></li>
+          <li><a href="ProtectPDF.html" class="sidebar-submenu-link">Protect PDF</a></li>
+          <li><a href="EXIFdata.html" class="sidebar-submenu-link">Remove EXIF Data</a></li>
+        </ul>
+      </div>
+    </div>
+     <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Image</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="Compressimage.html" class="sidebar-submenu-link">Compress Image</a></li>
+              <li><a href="Resizeimage.html" class="sidebar-submenu-link">Resize Image</a></li>
+              <li><a href="Cropimage.html" class="sidebar-submenu-link">Crop Image</a></li>
+              <li><a href="ConverttoJPG.html" class="sidebar-submenu-link">Convert to JPG</a></li>
+              <li><a href="JPGtoPDF.html" class="sidebar-submenu-link">JPG to PDF</a></li>
+              <li><a href="JPGtoPNG.html" class="sidebar-submenu-link">JPG to PNG</a></li>
+              <li><a href="UpscaleImage.html" class="sidebar-submenu-link">Upscale Image</a></li>
+              <li><a href="RotateImage.html" class="sidebar-submenu-link">Rotate Image</a></li>
+
+              <li><a href="HtmltoImage.html" class="sidebar-submenu-link">HTML to Image</a></li>
+              <li><a href="WatermarkRemoverImage.html" class="sidebar-submenu-link">Watermark Image</a></li>
+              <li><a href="Blurimage.html" class="sidebar-submenu-link">Blur Image</a></li>
+              <li><a href="PhotoEditor.html" class="sidebar-submenu-link">Photo Editor</a></li>
+              <li><a href="Bgremove.html" class="sidebar-submenu-link">Remove Background</a></li>
+              <li><a href="MemeGenerator.html" class="sidebar-submenu-link">Meme Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+    <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Viewer</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="JsonViewer.html" class="sidebar-submenu-link">JSON Viewer & Formatter</a></li>
+              <li><a href="CSVtotext.html" class="sidebar-submenu-link">CSV to Text</a></li>
+              <li><a href="VCFtotext.html" class="sidebar-submenu-link">VCF to Text</a></li>
+              <li><a href="VCFtoExcel.html" class="sidebar-submenu-link">VCF to Excel</a></li>
+               <li><a href="Textcompare.html" class="sidebar-submenu-link">Text Compare</a></li>
+        </ul>
+      </div>
+      </div>
+
+       <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Calculator</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="GSTCalculator.html" class="sidebar-submenu-link">GST Calculator - India</a></li>
+              <li><a href="TaxCalculator.html" class="sidebar-submenu-link">Tax Calculator</a></li>
+              <li><a href="LoanEMIcalculator.html" class="sidebar-submenu-link">Loan EMI Calculator</a></li>
+              <li><a href="PersonalLoancalculator.html" class="sidebar-submenu-link">Personal Loan Calculator</a></li>
+
+               <li><a href="ScientificCalculator.html" class="sidebar-submenu-link">Scientific Calculator</a></li>
+              <li><a href="PercentageCalculator.html" class="sidebar-submenu-link">Percentage Calculator</a></li>
+              <li><a href="CurrencyCalculator.html" class="sidebar-submenu-link">Currency Calculator</a></li>
+              <li><a href="Agecalculator.html" class="sidebar-submenu-link">Age Calculator</a></li>
+
+               <li><a href="TimeCalculator.html" class="sidebar-submenu-link">Time Calculator</a></li>
+              <li><a href="TimeDurationCalculator.html" class="sidebar-submenu-link">Time Duration Calculator</a></li>
+              <li><a href="ElectricityCalculator.html" class="sidebar-submenu-link">Electricity Calculator</a></li>
+              <li><a href="WeightCalculator.html" class="sidebar-submenu-link">Weight Calculator</a></li>
+
+              <li><a href="TimeZoneCalculator.html" class="sidebar-submenu-link">Time Zone Calculator</a></li>
+              <li><a href="ProbabilityCalculator.html" class="sidebar-submenu-link">Probability Calculator</a></li>
+        </ul>
+      </div>
+      </div>
+
+ <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>SEO</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="WordCounter.html" class="sidebar-submenu-link">Word counter</a></li>
+              <li><a href="FaviconGenerator.html" class="sidebar-submenu-link">Favicon generator</a></li>
+              <li><a href="SitemapGenerator.html" class="sidebar-submenu-link">Sitemap Generator</a></li>
+              <li><a href="RobotstxtGenerator.html" class="sidebar-submenu-link">Robots.txt Generator</a></li>
+
+              <li><a href="MetaTagGenerator.html" class="sidebar-submenu-link">Meta Tag Generator</a></li>
+              <li><a href="HtaccessGenerator.html" class="sidebar-submenu-link">.htaccess Generator</a></li>
+              <li><a href="StructuredDataGenerator.html" class="sidebar-submenu-link">Structured Data Generator</a></li>
+              <li><a href="OGtagsGenerator.html" class="sidebar-submenu-link">OG Tags Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Converters</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="Mp4toMp3.html" class="sidebar-submenu-link">MP4 to MP3</a></li>
+              <li><a href="WordtoPdf.html" class="sidebar-submenu-link">word to PDF</a></li>
+              <li><a href="XmltoJson.html" class="sidebar-submenu-link">XML to JSON</a></li>
+              <li><a href="JsontoXml.html" class="sidebar-submenu-link">JSON to XML</a></li>
+
+                <li><a href="JsontoCsv.html" class="sidebar-submenu-link">JSON to CSV</a></li>
+              <li><a href="JsontoExcel.html" class="sidebar-submenu-link">JSON to Excel</a></li>
+              <li><a href="TexttoHtml.html" class="sidebar-submenu-link">Text to HTMl</a></li>
+              <li><a href="PpttoPdf.html" class="sidebar-submenu-link">Powerpoint to PDF</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Downloader</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu1" data-submenu>
+        <ul class="sidebar-submenu-list1 sidebar-submenu1-grid3">
+          <li><a href="InstaReels.html" class="sidebar-submenu-link1">Instagram Reels Downloader</a></li>
+              <li><a href="YoutubeVideoDownloader.html" class="sidebar-submenu-link1">Youtube Videos Downloader</a></li>
+              <li><a href="InstaPost.html" class="sidebar-submenu-link1">Instagram Post Downloader</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Minifier</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+           <li><a href="Htmlminifier.html" class="sidebar-submenu-link">HTML Minifier</a></li>
+              <li><a href="Cssminifier.html" class="sidebar-submenu-link">CSS Minifier</a></li>
+              <li><a href="JsMinifier.html" class="sidebar-submenu-link">JS Minifier</a></li>
+              <li><a href="HtmlUnminifier.html" class="sidebar-submenu-link">HTML Unminifier</a></li>
+               <li><a href="Cssunminifier.html" class="sidebar-submenu-link">CSS Unminifier</a></li>
+              <li><a href="JsUnminifier.html" class="sidebar-submenu-link">JS Unminifier</a></li>
+        </ul>
+      </div>
+      </div>
+
+  </nav>
+</aside>
+
+
+    <!-- Main Content -->
+     <main class="main-content1">
+
+      <div class="tool-card1">
+        <div class="tool-header1">
+          <h2>Resize Image Files</h2>
+          <p>Select one or more images (JPG, PNG, WebP) and resize them in your browser. No upload required!</p>
+        </div>
+        <div x-data="resizeImageTool()" class="w-full">
+          <div
+            class="drop-area1"
+            :class="{'active': isDragging}"
+            @dragover.prevent="isDragging = true"
+            @dragleave.prevent="isDragging = false"
+            @drop.prevent="handleDrop($event)"
+          >
+            <div class="flex-col-center">
+              <span class="emoji-icon">⬆️</span>
+              <span class="text-gray-500" x-text="isDragging ? 'Drop images here...' : 'Drag & drop images here'"></span>
+            </div>
+          </div>
+
+          <div class="flex-col-center btn-group" x-show="showDimensions">
+            <input type="number" min="1" class="input-field" style="width: 6rem;" placeholder="Width" x-model.number="width">
+            <input type="number" min="1" class="input-field" style="width: 6rem;" placeholder="Height" x-model.number="height">
+          </div>
+
+          <div class="btn-group">
+            <template x-if="!showAddMore">
+              <button class="butn" type="button" @click="triggerBrowseAndShowInputs">📁 Browse Files</button>
+            </template>
+            <template x-if="showAddMore">
+              <button
+                class="butn"
+                type="button"
+                @click="triggerBrowseAndShowInputs"
+              >
+                <img src="./assets/img/Add-sign.png" height="auto" width="11.5px"> Add More Files
+              </button>
+            </template>
+          </div>
+
+          <input type="file" accept="image/jpeg, image/png, image/webp" multiple class="hidden-file-input" x-ref="fileInput" @change="handleFiles($event)">
+
+          <template x-if="files.length">
+            <ul class="file-list">
+              <template x-for="(file, idx) in files" :key="idx">
+                <li class="file-item">
+                  <span x-text="file.name"></span>
+                  <button class="remove-file-btn" @click="removeFile(idx)">✕</button>
+                </li>
+              </template>
+            </ul>
+          </template>
+
+          <template x-if="files.length > 0">
+            <button
+              class="butn-3" style="width: 40%;"
+              :disabled="processing || !width || !height"
+              @click="resizeImages"
+              x-text="processing ? 'Resizing...' : 'Resize Images'"
+            ></button>
+          </template>
+
+          <template x-if="resizedFiles.length">
+            <div class="mt-4">
+              <div class="mb-2" style="font-weight: 600;">Download resized images:</div>
+              <ul class="file-list">
+                <template x-for="(file, idx) in resizedFiles" :key="idx">
+                  <li class="file-item">
+                    <span x-text="file.name"></span>
+                    <a :href="file.url" :download="file.name" class="btn-download">Download</a>
+                  </li>
+                </template>
+              </ul>
+              <template x-if="resizedFiles.length > 1">
+                <button class="download-zip-btn" @click="downloadZip">Download All as ZIP</button>
+              </template>
+            </div>
+          </template>
+
+          <template x-if="error">
+            <div class="error-message" x-text="error"></div>
+          </template>
+        </div>
+      </div>
+
+      <div class="tool-footer">
+        <div class="footer-buttons">
+          <a href="Resizeimage.html" class="footer-btn"> Resize Image </a>
+          <a href="Cropimage.html" class="footer-btn"> Crop Image </a>
+          <a href="ConverttoJPG.html" class="footer-btn"> Convert to JPG</a>
+          <a href="JPGtoPDF.html" class="footer-btn"> JPG to PDF</a>
+          <a href="JPGtoPNG.html" class="footer-btn"> JPG to PNG</a>
+          <a href="UpscaleImage.html" class="footer-btn"> Upscale Image</a>
+          <a href="RotateImage.html" class="footer-btn"> Rotate Image</a>
+          <a href="HtmltoImage.html" class="footer-btn"> HTML to Image</a>
+          <a href="WatermarkRemoverImage.html" class="footer-btn"> Watermark Image</a>
+          <a href="Blurimage.html" class="footer-btn"> Blur Image</a>
+          <a href="PhotoEditor.html" class="footer-btn"> Photo Editor</a>
+          <a href="Bgremove.html" class="footer-btn"> Remove Background</a>
+          <a href="MemeGenerator.html" class="footer-btn"> Meme Generator</a>
+        </div>
+      </div>
+<script defer src="assets/js/alpine.min.js"></script>
+  <script defer src="assets/js/pdf-lib.min.js"></script>
+  <script defer src="assets/js/jszip.min.js"></script>
+  <script defer src="assets/js/xlsx.full.min.js"></script>
+  <script defer src="assets/js/pdf.min.js"></script>
+  <script defer src="assets/js/FileSaver.min.js"></script>
+
+      <script>
+        function resizeImageTool() {
+          return {
+            files: [],
+            resizedFiles: [],
+            processing: false,
+            error: '',
+            isDragging: false,
+            width: null,
+            height: null,
+            showAddMore: false,
+            showDimensions: false, // NEW: control visibility of width/height inputs
+
+            triggerBrowseAndShowInputs() {
+              this.showDimensions = true;
+              this.$refs.fileInput.value = null; // Clear previous selection
+              this.$refs.fileInput.click();
+            },
+
+            handleFiles(event) {
+              this.error = '';
+              this.resizedFiles = [];
+              let newFiles = [];
+              if (event.target && event.target.files) {
+                newFiles = Array.from(event.target.files);
+              } else if (event.dataTransfer && event.dataTransfer.files) {
+                newFiles = Array.from(event.dataTransfer.files);
+              }
+
+              let filtered = newFiles.filter(
+                f => /^image\/(jpeg|png|webp)$/.test(f.type) &&
+                !this.files.some(existing => existing.name === f.name && existing.size === f.size)
+              );
+
+              if (filtered.length < newFiles.length) {
+                this.error = "Some files were not valid images (JPG, PNG, WebP) and were ignored.";
+              }
+
+              this.files = this.files.concat(filtered);
+              if (event.target) event.target.value = "";
+              this.isDragging = false;
+              this.showAddMore = this.files.length > 0;
+              if (this.files.length > 0) this.showDimensions = true;
+
+              if (filtered.length > 0 && !this.width && !this.height) { // Only set initial dimensions if not already set
+                const firstFile = filtered[0];
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                  const img = new Image();
+                  img.onload = () => {
+                    this.width = img.width;
+                    this.height = img.height;
+                  };
+                  img.onerror = () => {
+                    console.error("Error loading image to get dimensions.");
+                    this.error = "Could not read dimensions of the first image.";
+                  };
+                  img.src = e.target.result;
+                };
+                reader.onerror = () => {
+                  console.error("Error reading file to get dimensions.");
+                  this.error = "Could not read the first image file.";
+                };
+                reader.readAsDataURL(firstFile);
+              }
+            },
+
+            handleDrop(event) {
+              this.handleFiles(event);
+              this.isDragging = false;
+              this.showDimensions = true;
+            },
+
+            removeFile(idx) {
+              this.files.splice(idx, 1);
+              this.resizedFiles = [];
+              this.showAddMore = this.files.length > 0;
+              this.error = '';
+              if (this.files.length === 0) {
+                this.width = null;
+                this.height = null;
+                this.showDimensions = false;
+              } else {
+                // If files still exist, update dimensions to the new first file
+                const firstFile = this.files[0];
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                  const img = new Image();
+                  img.onload = () => {
+                    this.width = img.width;
+                    this.height = img.height;
+                  };
+                  img.onerror = () => {
+                    console.error("Error loading image to get dimensions after removal.");
+                  };
+                  img.src = e.target.result;
+                };
+                reader.readAsDataURL(firstFile);
+              }
+            },
+
+            async resizeImages() {
+              this.processing = true;
+              this.error = '';
+              this.resizedFiles = [];
+
+              if (!this.files.length) {
+                this.error = 'Please select at least one image file.';
+                this.processing = false;
+                return;
+              }
+              if (!this.width || !this.height || this.width <= 0 || this.height <= 0) {
+                this.error = 'Please enter valid positive width and height.';
+                this.processing = false;
+                return;
+              }
+
+              try {
+                for (const file of this.files) {
+                  const resized = await this.resizeImageFile(file, this.width, this.height);
+                  this.resizedFiles.push(resized);
+                }
+              } catch (e) {
+                console.error("Error resizing image:", e);
+                this.error = 'Failed to resize images. ' + (e.message || 'An unknown error occurred.');
+              } finally {
+                this.processing = false;
+              }
+            },
+
+            resizeImageFile(file, width, height) {
+              return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                  const img = new Image();
+                  img.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = width;
+                    canvas.height = height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, width, height);
+
+                    let type = file.type;
+                    // Ensure the output type is consistent for WebP, and provide fallback for unsupported types
+                    if (type === 'image/webp') {
+                      type = 'image/png'; // Convert WebP to PNG if resizing, or to JPEG
+                    } else if (!/^image\/(jpeg|png)$/.test(type)) {
+                      type = 'image/jpeg'; // Default to JPEG for unsupported types
+                    }
+
+                    canvas.toBlob((blob) => {
+                      if (!blob) {
+                        reject('Failed to create image blob.');
+                        return;
+                      }
+                      const originalName = file.name.replace(/\.(png|jpg|jpeg|webp)$/i, '');
+                      const newExtension = type.split('/')[1];
+                      const name = `${originalName}-resized.${newExtension}`;
+                      resolve({ url: URL.createObjectURL(blob), name, blob });
+                    }, type, 0.92); // 0.92 quality for JPEG/WebP
+                  };
+                  img.onerror = () => reject('Failed to load image for resizing. Check file integrity.');
+                  img.src = e.target.result;
+                };
+                reader.onerror = () => reject('Failed to read file for resizing.');
+                reader.readAsDataURL(file);
+              });
+            },
+
+            async downloadZip() {
+              if (this.resizedFiles.length < 2) return;
+              const zip = new JSZip();
+              this.resizedFiles.forEach(file => {
+                zip.file(file.name, file.blob);
+              });
+              this.processing = true;
+              try {
+                const content = await zip.generateAsync({ type: 'blob' });
+                const url = URL.createObjectURL(content);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'resized-images.zip';
+                document.body.appendChild(a);
+                a.click();
+                setTimeout(() => {
+                  URL.revokeObjectURL(url);
+                  a.remove();
+                }, 1500);
+              } catch (e) {
+                this.error = "Failed to create ZIP file: " + e.message;
+              } finally {
+                this.processing = false;
+              }
+            }
+          }
+        }
+
+        document.querySelectorAll('.sidebar-menu').forEach(menu => {
+          let timeout;
+          menu.addEventListener('mouseenter', () => {
+            clearTimeout(timeout);
+            menu.classList.add('open');
+          });
+          menu.addEventListener('mouseleave', () => {
+            timeout = setTimeout(() => menu.classList.remove('open'), 150);
+          });
+        });
+      </script>
+
+    </main>
+  </div>
+</body>
+</html>

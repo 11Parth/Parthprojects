@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mooniverse Toolkit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+   
+</head>
+<body>
+
+<div class="container1">
+    <!-- Sidebar -->
+      <aside class="sidebar1">
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <a href="Index.html">
+      <img src="./assets/img/Mooniverse-Logo1.png" style="max-width: 200px; height: auto;" />
+    </a>
+  </div>
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+    <!-- PDF Menu with hoverable submenu -->
+    <div class="sidebar-menu" data-menu>
+      <button class="sidebar-menu-btn" type="button">
+        <span>PDF</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+          <li><a href="MergePDF.html" class="sidebar-submenu-link">Merge PDF</a></li>
+          <li><a href="SplitPDF.html" class="sidebar-submenu-link">Split PDF</a></li>
+          <li><a href="OrganizePDF.html" class="sidebar-submenu-link">Organize PDF</a></li>
+          <li><a href="Removepages.html" class="sidebar-submenu-link">Remove Pages</a></li>
+          <li><a href="Extractpages.html" class="sidebar-submenu-link">Extract Pages</a></li>
+          <li><a href="PDFtoJPG.html" class="sidebar-submenu-link">PDF to JPG</a></li>
+          <li><a href="PDFtoPNG.html" class="sidebar-submenu-link">PDF to PNG</a></li>
+          <li><a href="SignPDF.html" class="sidebar-submenu-link">Sign PDF</a></li>
+          <li><a href="RotatePDF.html" class="sidebar-submenu-link">Rotate PDF</a></li>
+          <li><a href="Addpagenumbers.html" class="sidebar-submenu-link">Add Page Numbers</a></li>
+          <li><a href="ProtectPDF.html" class="sidebar-submenu-link">Protect PDF</a></li>
+          <li><a href="EXIFdata.html" class="sidebar-submenu-link">Remove EXIF Data</a></li>
+        </ul>
+      </div>
+    </div>
+     <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Image</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="Compressimage.html" class="sidebar-submenu-link">Compress Image</a></li>
+              <li><a href="Resizeimage.html" class="sidebar-submenu-link">Resize Image</a></li>
+              <li><a href="Cropimage.html" class="sidebar-submenu-link">Crop Image</a></li>
+              <li><a href="ConverttoJPG.html" class="sidebar-submenu-link">Convert to JPG</a></li>
+              <li><a href="JPGtoPDF.html" class="sidebar-submenu-link">JPG to PDF</a></li>
+              <li><a href="JPGtoPNG.html" class="sidebar-submenu-link">JPG to PNG</a></li>
+              <li><a href="UpscaleImage.html" class="sidebar-submenu-link">Upscale Image</a></li>
+              <li><a href="RotateImage.html" class="sidebar-submenu-link">Rotate Image</a></li>
+
+              <li><a href="HtmltoImage.html" class="sidebar-submenu-link">HTML to Image</a></li>
+              <li><a href="WatermarkRemoverImage.html" class="sidebar-submenu-link">Watermark Image</a></li>
+              <li><a href="Blurimage.html" class="sidebar-submenu-link">Blur Image</a></li>
+              <li><a href="PhotoEditor.html" class="sidebar-submenu-link">Photo Editor</a></li>
+              <li><a href="Bgremove.html" class="sidebar-submenu-link">Remove Background</a></li>
+              <li><a href="MemeGenerator.html" class="sidebar-submenu-link">Meme Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+    <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Viewer</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="JsonViewer.html" class="sidebar-submenu-link">JSON Viewer & Formatter</a></li>
+              <li><a href="CSVtotext.html" class="sidebar-submenu-link">CSV to Text</a></li>
+              <li><a href="VCFtotext.html" class="sidebar-submenu-link">VCF to Text</a></li>
+              <li><a href="VCFtoExcel.html" class="sidebar-submenu-link">VCF to Excel</a></li>
+               <li><a href="Textcompare.html" class="sidebar-submenu-link">Text Compare</a></li>
+        </ul>
+      </div>
+      </div>
+
+       <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Calculator</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="GSTCalculator.html" class="sidebar-submenu-link">GST Calculator - India</a></li>
+              <li><a href="TaxCalculator.html" class="sidebar-submenu-link">Tax Calculator</a></li>
+              <li><a href="LoanEMIcalculator.html" class="sidebar-submenu-link">Loan EMI Calculator</a></li>
+              <li><a href="PersonalLoancalculator.html" class="sidebar-submenu-link">Personal Loan Calculator</a></li>
+
+               <li><a href="ScientificCalculator.html" class="sidebar-submenu-link">Scientific Calculator</a></li>
+              <li><a href="PercentageCalculator.html" class="sidebar-submenu-link">Percentage Calculator</a></li>
+              <li><a href="CurrencyCalculator.html" class="sidebar-submenu-link">Currency Calculator</a></li>
+              <li><a href="Agecalculator.html" class="sidebar-submenu-link">Age Calculator</a></li>
+
+               <li><a href="TimeCalculator.html" class="sidebar-submenu-link">Time Calculator</a></li>
+              <li><a href="TimeDurationCalculator.html" class="sidebar-submenu-link">Time Duration Calculator</a></li>
+              <li><a href="ElectricityCalculator.html" class="sidebar-submenu-link">Electricity Calculator</a></li>
+              <li><a href="WeightCalculator.html" class="sidebar-submenu-link">Weight Calculator</a></li>
+
+              <li><a href="TimeZoneCalculator.html" class="sidebar-submenu-link">Time Zone Calculator</a></li>
+              <li><a href="ProbabilityCalculator.html" class="sidebar-submenu-link">Probability Calculator</a></li>
+        </ul>
+      </div>
+      </div>
+
+ <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>SEO</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="WordCounter.html" class="sidebar-submenu-link">Word counter</a></li>
+              <li><a href="FaviconGenerator.html" class="sidebar-submenu-link">Favicon generator</a></li>
+              <li><a href="SitemapGenerator.html" class="sidebar-submenu-link">Sitemap Generator</a></li>
+              <li><a href="RobotstxtGenerator.html" class="sidebar-submenu-link">Robots.txt Generator</a></li>
+
+              <li><a href="MetaTagGenerator.html" class="sidebar-submenu-link">Meta Tag Generator</a></li>
+              <li><a href="HtaccessGenerator.html" class="sidebar-submenu-link">.htaccess Generator</a></li>
+              <li><a href="StructuredDataGenerator.html" class="sidebar-submenu-link">Structured Data Generator</a></li>
+              <li><a href="OGtagsGenerator.html" class="sidebar-submenu-link">OG Tags Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Converters</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="Mp4toMp3.html" class="sidebar-submenu-link">MP4 to MP3</a></li>
+              <li><a href="WordtoPdf.html" class="sidebar-submenu-link">word to PDF</a></li>
+              <li><a href="XmltoJson.html" class="sidebar-submenu-link">XML to JSON</a></li>
+              <li><a href="JsontoXml.html" class="sidebar-submenu-link">JSON to XML</a></li>
+
+                <li><a href="JsontoCsv.html" class="sidebar-submenu-link">JSON to CSV</a></li>
+              <li><a href="JsontoExcel.html" class="sidebar-submenu-link">JSON to Excel</a></li>
+              <li><a href="TexttoHtml.html" class="sidebar-submenu-link">Text to HTMl</a></li>
+              <li><a href="PpttoPdf.html" class="sidebar-submenu-link">Powerpoint to PDF</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Downloader</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu1" data-submenu>
+        <ul class="sidebar-submenu-list1 sidebar-submenu1-grid3">
+          <li><a href="InstaReels.html" class="sidebar-submenu-link1">Instagram Reels Downloader</a></li>
+              <li><a href="YoutubeVideoDownloader.html" class="sidebar-submenu-link1">Youtube Videos Downloader</a></li>
+              <li><a href="InstaPost.html" class="sidebar-submenu-link1">Instagram Post Downloader</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Minifier</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+           <li><a href="Htmlminifier.html" class="sidebar-submenu-link">HTML Minifier</a></li>
+              <li><a href="Cssminifier.html" class="sidebar-submenu-link">CSS Minifier</a></li>
+              <li><a href="JsMinifier.html" class="sidebar-submenu-link">JS Minifier</a></li>
+              <li><a href="HtmlUnminifier.html" class="sidebar-submenu-link">HTML Unminifier</a></li>
+               <li><a href="Cssunminifier.html" class="sidebar-submenu-link">CSS Unminifier</a></li>
+              <li><a href="JsUnminifier.html" class="sidebar-submenu-link">JS Unminifier</a></li>
+        </ul>
+      </div>
+      </div>
+
+  </nav>
+</aside>
+
+    <!-- Main Content -->
+    <main class="main-content1">
+
+        <div class="tool-card1">
+            <div class="tool-header1">
+                <h2>Add Page Numbers</h2>
+                <p>Add page numbers to your PDF in seconds. All processing is done locally — your file never leaves your browser.</p>
+            </div>
+            <div x-data="addPageNumbersTool()" class="w-full">
+                <div
+                    class="drop-area1"
+                    :class="{'active': isDragging}"
+                    @dragover.prevent="isDragging = true"
+                    @dragleave.prevent="isDragging = false"
+                    @drop.prevent="handleDrop($event)"
+                >
+                    <div>
+                        <span class="emoji-icon">⬆️</span> <span x-text="isDragging ? 'Drop PDFs here...' : 'Drag & drop PDFs here'"></span>
+                    </div>
+                </div>
+
+                <div class="button-group1">
+                    <template x-if="!showAddMore">
+                        <button class="butn" type="button" @click="triggerBrowse">📁 Browse Files</button>
+                    </template>
+                    <template x-if="showAddMore">
+                        <button
+                            class="butn"
+                            type="button"
+                            @click="$refs.fileInput.click()"
+                        >
+                            <img src="./assets/img/Add-sign.png" class="add-more-icon"> Add More Files
+                        </button>
+                    </template>
+                    <button
+                        class="butn btn-secondary1"
+                        type="button"
+                        @click="showUrlInput = !showUrlInput"
+                    >
+                        <img src="./assets/img/Add-from-url.png" class="add-url-icon">Add from URL
+                    </button>
+                </div>
+
+                <input type="file" accept="application/pdf" multiple class="hidden-file-input" x-ref="fileInput" @change="handleFiles($event)">
+
+                <div class="url-input-group" x-show="showUrlInput" x-transition>
+                    <input type="text" class="url-input" placeholder="Paste PDF URL here" x-model="urlInput">
+                    <button class="btn-1" type="button" @click="addFromUrl" :disabled="fetchingUrl" x-text="fetchingUrl ? 'Fetching...' : 'Get File'"></button>
+                </div>
+
+                <template x-if="files.length">
+                    <ul class="file-list">
+                        <template x-for="(file, idx) in files" :key="idx">
+                            <li class="file-item">
+                                <span x-text="file.name"></span>
+                                <button type="button" @click="removeFile(idx)">✕</button>
+                            </li>
+                        </template>
+                    </ul>
+                </template>
+
+                <template x-if="files.length > 0">
+                    <div class="options-group">
+                        <label>Position:</label>
+                        <select x-model="position">
+                            <option value="bottom-right">Bottom Right</option>
+                            <option value="bottom-center">Bottom Center</option>
+                            <option value="bottom-left">Bottom Left</option>
+                            <option value="top-right">Top Right</option>
+                            <option value="top-center">Top Center</option>
+                            <option value="top-left">Top Left</option>
+                        </select>
+                        <label class="ml-4">Font Size:</label>
+                        <input type="number" min="6" max="48" x-model="fontSize">
+                        <label class="ml-4">Color:</label>
+                        <input type="color" x-model="fontColor" style="vertical-align:middle;">
+                    </div>
+                </template>
+
+                <template x-if="files.length > 0">
+                    <button class="butn" :disabled="processing" @click="addNumbers" x-text="processing ? 'Processing...' : 'Add Page Numbers'"></button>
+                </template>
+
+                <template x-if="numberedFiles.length">
+                    <div class="download-section">
+                        <div class="download-header">Download PDFs with page numbers:</div>
+                        <ul class="file-list">
+                            <template x-for="(file, idx) in numberedFiles" :key="idx">
+                                <li class="file-item">
+                                    <span x-text="file.name"></span>
+                                    <a :href="file.url" :download="file.name" class="btn-cloud">Download</a>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </template>
+
+                <template x-if="error">
+                    <div class="error-message" x-text="error"></div>
+                </template>
+            </div>
+        </div>
+
+        <div class="tool-footer">
+            <div class="footer-buttons">
+                <a href="MergePDF.html" class="footer-btn"> Merge PDF</a>
+                <a href="SplitPDF.html" class="footer-btn"> Split PDF</a>
+                <a href="OrganizePDF.html" class="footer-btn"> Organize PDF </a>
+                <a href="Removepages.html" class="footer-btn"> Remove Pages</a>
+                <a href="Extractpages.html" class="footer-btn"> Extract Pages</a>
+                <a href="PDFtoJPG.html" class="footer-btn"> PDF to JPG</a>
+                <a href="PDFtoPNG.html" class="footer-btn"> PDF to PNG</a>
+                <a href="SignPDF.html" class="footer-btn"> Sign PDF</a>
+                <a href="RotatePDF.html" class="footer-btn"> Rotate PDF</a>
+                <a href="ProtectPDF.html" class="footer-btn"> Protect PDF</a>
+                <a href="EXIFdata.html" class="footer-btn"> Remove EXIF Data</a>
+            </div>
+        </div>
+ <script defer src="assets/js/alpine.min.js"></script>
+    <script defer src="assets/js/pdf-lib.min.js"></script>
+    <script defer src="assets/js/jszip.min.js"></script>
+     <script defer src="assets/js/pdf.min.js"></script>
+        <script>
+            function addPageNumbersTool() {
+                return {
+                    files: [],
+                    numberedFiles: [],
+                    processing: false,
+                    error: '',
+                    isDragging: false,
+                    showUrlInput: false,
+                    urlInput: '',
+                    fetchingUrl: false,
+                    showAddMore: false,
+                    position: 'bottom-right',
+                    fontSize: 14,
+                    fontColor: '#333333',
+
+                    triggerBrowse() {
+                        this.$refs.fileInput.click();
+                    },
+
+                    handleFiles(event) {
+                        this.error = '';
+                        this.numberedFiles = [];
+                        let newFiles = [];
+                        if (event.target && event.target.files) {
+                            newFiles = Array.from(event.target.files);
+                        } else if (event.dataTransfer && event.dataTransfer.files) {
+                            newFiles = Array.from(event.dataTransfer.files);
+                        }
+                        let filtered = newFiles.filter(
+                            f => f.type === "application/pdf" && !this.files.some(existing => existing.name === f.name && existing.size === f.size)
+                        );
+                        if (filtered.length < newFiles.length) {
+                            this.error = "Some files were not valid PDFs and were ignored.";
+                        }
+                        this.files = this.files.concat(filtered);
+                        if (event.target) event.target.value = "";
+                        this.isDragging = false;
+                        this.showAddMore = this.files.length > 0;
+                    },
+
+                    handleDrop(event) {
+                        this.handleFiles(event);
+                        this.isDragging = false;
+                    },
+
+                    removeFile(idx) {
+                        this.files.splice(idx, 1);
+                        this.numberedFiles = [];
+                        this.showAddMore = this.files.length > 0;
+                    },
+
+                    async addFromUrl() {
+                        this.error = '';
+                        if (!this.urlInput.trim()) {
+                            this.error = "Please enter a PDF URL.";
+                            return;
+                        }
+                        this.fetchingUrl = true;
+                        try {
+                            let url = this.urlInput.trim();
+                            if (!/^https?:\/\//i.test(url)) url = "https://" + url;
+                            let response;
+                            try {
+                                response = await fetch(url, { mode: 'cors' });
+                                if (!response.ok) throw new Error("Direct fetch failed");
+                            } catch {
+                             
+                                const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url);
+                                response = await fetch(proxyUrl);
+                                if (!response.ok) throw new Error("Proxy fetch failed");
+                            }
+                            const blob = await response.blob();
+                            if (!blob.type.includes("pdf")) throw new Error("Downloaded file is not a PDF.");
+                            const fileName = url.split('/').pop().split('?')[0] || 'downloaded.pdf';
+                            if (!this.files.some(f => f.name === fileName && f.size === blob.size)) {
+                                this.files.push(new File([blob], fileName, { type: 'application/pdf' }));
+                            } else {
+                                this.error = "This PDF file is already added.";
+                            }
+                            this.urlInput = '';
+                            this.showUrlInput = false;
+                            this.showAddMore = true;
+                        } catch (e) {
+                            this.error = "Failed to fetch PDF from URL. " + e.message;
+                        }
+                        this.fetchingUrl = false;
+                    },
+
+                    async addNumbers() {
+                        this.processing = true;
+                        this.error = '';
+                        this.numberedFiles = [];
+
+                        try {
+                            for (const file of this.files) {
+                                const buffer = await file.arrayBuffer();
+                                const pdfDoc = await PDFLib.PDFDocument.load(buffer, { ignoreEncryption: true });
+                                const font = await pdfDoc.embedFont(PDFLib.StandardFonts.Helvetica);
+                                const pageCount = pdfDoc.getPageCount();
+                                for (let i = 0; i < pageCount; i++) {
+                                    const page = pdfDoc.getPage(i);
+                                    const { width, height } = page.getSize();
+                                    const text = `${i + 1} / ${pageCount}`;
+                                    const fontSize = Number(this.fontSize);
+                                    const color = PDFLib.rgb(
+                                        parseInt(this.fontColor.substr(1,2),16)/255,
+                                        parseInt(this.fontColor.substr(3,2),16)/255,
+                                        parseInt(this.fontColor.substr(5,2),16)/255
+                                    );
+                                    let x, y;
+                                    const textWidth = font.widthOfTextAtSize(text, fontSize);
+                                    const textHeight = font.heightAtSize(fontSize);
+
+                                    switch (this.position) {
+                                        case 'bottom-right':
+                                            x = width - textWidth - 30;
+                                            y = 20;
+                                            break;
+                                        case 'bottom-center':
+                                            x = (width - textWidth) / 2;
+                                            y = 20;
+                                            break;
+                                        case 'bottom-left':
+                                            x = 30;
+                                            y = 20;
+                                            break;
+                                        case 'top-right':
+                                            x = width - textWidth - 30;
+                                            y = height - textHeight - 10;
+                                            break;
+                                        case 'top-center':
+                                            x = (width - textWidth) / 2;
+                                            y = height - textHeight - 10;
+                                            break;
+                                        case 'top-left':
+                                            x = 30;
+                                            y = height - textHeight - 10;
+                                            break;
+                                        default:
+                                            x = width - textWidth - 30;
+                                            y = 20;
+                                    }
+                                    page.drawText(text, {
+                                        x,
+                                        y,
+                                        size: fontSize,
+                                        font,
+                                        color,
+                                    });
+                                }
+                                const newBytes = await pdfDoc.save();
+                                const baseName = file.name.replace(/\.pdf$/i, '');
+                                const fileName = `${baseName}_numbered.pdf`;
+                                const url = URL.createObjectURL(new Blob([newBytes], { type: "application/pdf" }));
+                                this.numberedFiles.push({ name: fileName, url });
+                            }
+                        } catch (e) {
+                            console.error(e);
+                            this.error = "Failed to add page numbers. Please ensure it is a valid PDF file and not encrypted.";
+                        }
+
+                        this.processing = false;
+                    }
+                }
+            }
+
+           
+            document.querySelectorAll('.sidebar-menu').forEach(menu => {
+                let timeout;
+                menu.addEventListener('mouseenter', () => {
+                    clearTimeout(timeout);
+                    menu.classList.add('open');
+                });
+                menu.addEventListener('mouseleave', () => {
+                    timeout = setTimeout(() => menu.classList.remove('open'), 150);
+                });
+            });
+        </script>
+
+    </main>
+</div>
+</body>
+</html>

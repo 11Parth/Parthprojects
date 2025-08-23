@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mooniverse Toolkit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f172a, #1e293b);
+    }
+
+    .glass {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .sidebar-item:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen flex">
+
+  <!-- Sidebar -->
+  <aside class="w-64 min-h-screen bg-gray-900 glass p-6 flex flex-col gap-4">
+    <div class="text-3xl font-bold mb-8 text-green-400 tracking-wide">
+      MOON<span class="text-white">IVERSE</span>
+      <p class="text-sm text-gray-300">Your All-in-One Toolkit</p>
+    </div>
+
+    <nav class="flex flex-col gap-3">
+      <a href="#" class="sidebar-item p-3 rounded-md transition hover:text-green-300">📄 PDF</a>
+      <a href="#" class="sidebar-item p-3 rounded-md transition hover:text-green-300">🖼️ Image</a>
+      <a href="#" class="sidebar-item p-3 rounded-md transition hover:text-green-300">🔍 Viewer</a>
+      <a href="#" class="sidebar-item p-3 rounded-md transition hover:text-green-300">🧮 Calculator</a>
+      <a href="#" class="sidebar-item p-3 rounded-md transition hover:text-green-300">🚀 SEO Tools</a>
+      <a href="#" class="sidebar-item p-3 rounded-md transition hover:text-green-300">🔄 Converter</a>
+      <a href="#" class="sidebar-item p-3 rounded-md transition hover:text-green-300">📥 Downloader</a>
+      <a href="#" class="sidebar-item p-3 rounded-md transition hover:text-green-300">⚙️ Minifier</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-10">
+    <header class="mb-10 text-center">
+      <h1 class="text-4xl font-bold">Everything You Need, In One Place</h1>
+      <p class="text-gray-300 text-lg mt-2">All the tools you need, free and always available.</p>
+    </header>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card Template -->
+      <div class="card glass p-6 rounded-2xl transition duration-300">
+        <h2 class="text-xl font-semibold mb-2">📄 PDF Tools</h2>
+        <p class="text-gray-300">Compress, merge, split, and convert PDFs quickly and easily.</p>
+      </div>
+
+      <div class="card glass p-6 rounded-2xl transition duration-300">
+        <h2 class="text-xl font-semibold mb-2">🖼️ Image Tools</h2>
+        <p class="text-gray-300">Resize, crop, compress, and convert images in seconds.</p>
+      </div>
+
+      <div class="card glass p-6 rounded-2xl transition duration-300">
+        <h2 class="text-xl font-semibold mb-2">🔍 Viewer Tools</h2>
+        <p class="text-gray-300">View PDFs, images, and documents directly in your browser.</p>
+      </div>
+
+      <div class="card glass p-6 rounded-2xl transition duration-300">
+        <h2 class="text-xl font-semibold mb-2">🧮 Calculators</h2>
+        <p class="text-gray-300">All-in-one calculators for finance, math, health, and more.</p>
+      </div>
+
+      <div class="card glass p-6 rounded-2xl transition duration-300">
+        <h2 class="text-xl font-semibold mb-2">🚀 SEO Tools</h2>
+        <p class="text-gray-300">Analyze, optimize, and improve your site's search engine presence.</p>
+      </div>
+
+      <div class="card glass p-6 rounded-2xl transition duration-300">
+        <h2 class="text-xl font-semibold mb-2">🔄 Converters</h2>
+        <p class="text-gray-300">Convert files between formats: video, audio, image, documents, and more.</p>
+      </div>
+
+      <div class="card glass p-6 rounded-2xl transition duration-300">
+        <h2 class="text-xl font-semibold mb-2">📥 Downloader</h2>
+        <p class="text-gray-300">Download videos, audio, or files from popular platforms easily.</p>
+      </div>
+
+      <div class="card glass p-6 rounded-2xl transition duration-300">
+        <h2 class="text-xl font-semibold mb-2">⚙️ Minifier</h2>
+        <p class="text-gray-300">Minify CSS, JavaScript, and HTML code to optimize performance.</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

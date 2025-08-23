@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mooniverse Toolkit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+     <script defer src="assets/js/alpine.min.js"></script>
+    <script defer src="assets/js/pdf-lib.min.js"></script>
+      <script defer src="assets/js/jszip.min.js"></script>
+         <script defer src="assets/js/xlsx.full.min.js"></script>
+               <script defer src="assets/js/pdf.min.js"></script>
+     <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+<body class="bg-gradient-to-br from-green-200 via-green-300 to-green-400 min-h-screen font-sans">
+ <div class="container1">
+    <!-- Sidebar -->
+     <aside class="sidebar1">
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <a href="Index.html">
+      <img src="./assets/img/Mooniverse-Logo1.png" style="max-width: 200px; height: auto;" />
+    </a>
+  </div>
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+    <!-- PDF Menu with hoverable submenu -->
+    <div class="sidebar-menu" data-menu>
+      <button class="sidebar-menu-btn" type="button">
+        <span>PDF</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+          <li><a href="MergePDF.html" class="sidebar-submenu-link">Merge PDF</a></li>
+          <li><a href="SplitPDF.html" class="sidebar-submenu-link">Split PDF</a></li>
+          <li><a href="OrganizePDF.html" class="sidebar-submenu-link">Organize PDF</a></li>
+          <li><a href="Removepages.html" class="sidebar-submenu-link">Remove Pages</a></li>
+          <li><a href="Extractpages.html" class="sidebar-submenu-link">Extract Pages</a></li>
+          <li><a href="PDFtoJPG.html" class="sidebar-submenu-link">PDF to JPG</a></li>
+          <li><a href="PDFtoPNG.html" class="sidebar-submenu-link">PDF to PNG</a></li>
+          <li><a href="SignPDF.html" class="sidebar-submenu-link">Sign PDF</a></li>
+          <li><a href="RotatePDF.html" class="sidebar-submenu-link">Rotate PDF</a></li>
+          <li><a href="Addpagenumbers.html" class="sidebar-submenu-link">Add Page Numbers</a></li>
+          <li><a href="ProtectPDF.html" class="sidebar-submenu-link">Protect PDF</a></li>
+          <li><a href="EXIFdata.html" class="sidebar-submenu-link">Remove EXIF Data</a></li>
+        </ul>
+      </div>
+    </div>
+     <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Image</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="Compressimage.html" class="sidebar-submenu-link">Compress Image</a></li>
+              <li><a href="Resizeimage.html" class="sidebar-submenu-link">Resize Image</a></li>
+              <li><a href="Cropimage.html" class="sidebar-submenu-link">Crop Image</a></li>
+              <li><a href="ConverttoJPG.html" class="sidebar-submenu-link">Convert to JPG</a></li>
+              <li><a href="JPGtoPDF.html" class="sidebar-submenu-link">JPG to PDF</a></li>
+              <li><a href="JPGtoPNG.html" class="sidebar-submenu-link">JPG to PNG</a></li>
+              <li><a href="UpscaleImage.html" class="sidebar-submenu-link">Upscale Image</a></li>
+              <li><a href="RotateImage.html" class="sidebar-submenu-link">Rotate Image</a></li>
+
+              <li><a href="HtmltoImage.html" class="sidebar-submenu-link">HTML to Image</a></li>
+              <li><a href="WatermarkRemoverImage.html" class="sidebar-submenu-link">Watermark Image</a></li>
+              <li><a href="Blurimage.html" class="sidebar-submenu-link">Blur Image</a></li>
+              <li><a href="PhotoEditor.html" class="sidebar-submenu-link">Photo Editor</a></li>
+              <li><a href="Bgremove.html" class="sidebar-submenu-link">Remove Background</a></li>
+              <li><a href="MemeGenerator.html" class="sidebar-submenu-link">Meme Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+    <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Viewer</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+            <li><a href="JsonViewer.html" class="sidebar-submenu-link">JSON Viewer & Formatter</a></li>
+              <li><a href="CSVtotext.html" class="sidebar-submenu-link">CSV to Text</a></li>
+              <li><a href="VCFtotext.html" class="sidebar-submenu-link">VCF to Text</a></li>
+              <li><a href="VCFtoExcel.html" class="sidebar-submenu-link">VCF to Excel</a></li>
+               <li><a href="Textcompare.html" class="sidebar-submenu-link">Text Compare</a></li>
+        </ul>
+      </div>
+      </div>
+
+       <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Calculator</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="GSTCalculator.html" class="sidebar-submenu-link">GST Calculator - India</a></li>
+              <li><a href="TaxCalculator.html" class="sidebar-submenu-link">Tax Calculator</a></li>
+              <li><a href="LoanEMIcalculator.html" class="sidebar-submenu-link">Loan EMI Calculator</a></li>
+              <li><a href="PersonalLoancalculator.html" class="sidebar-submenu-link">Personal Loan Calculator</a></li>
+
+               <li><a href="ScientificCalculator.html" class="sidebar-submenu-link">Scientific Calculator</a></li>
+              <li><a href="PercentageCalculator.html" class="sidebar-submenu-link">Percentage Calculator</a></li>
+              <li><a href="CurrencyCalculator.html" class="sidebar-submenu-link">Currency Calculator</a></li>
+              <li><a href="Agecalculator.html" class="sidebar-submenu-link">Age Calculator</a></li>
+
+               <li><a href="TimeCalculator.html" class="sidebar-submenu-link">Time Calculator</a></li>
+              <li><a href="TimeDurationCalculator.html" class="sidebar-submenu-link">Time Duration Calculator</a></li>
+              <li><a href="ElectricityCalculator.html" class="sidebar-submenu-link">Electricity Calculator</a></li>
+              <li><a href="WeightCalculator.html" class="sidebar-submenu-link">Weight Calculator</a></li>
+
+              <li><a href="TimeZoneCalculator.html" class="sidebar-submenu-link">Time Zone Calculator</a></li>
+              <li><a href="ProbabilityCalculator.html" class="sidebar-submenu-link">Probability Calculator</a></li>
+        </ul>
+      </div>
+      </div>
+
+ <div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>SEO</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="WordCounter.html" class="sidebar-submenu-link">Word counter</a></li>
+              <li><a href="FaviconGenerator.html" class="sidebar-submenu-link">Favicon generator</a></li>
+              <li><a href="SitemapGenerator.html" class="sidebar-submenu-link">Sitemap Generator</a></li>
+              <li><a href="RobotstxtGenerator.html" class="sidebar-submenu-link">Robots.txt Generator</a></li>
+
+              <li><a href="MetaTagGenerator.html" class="sidebar-submenu-link">Meta Tag Generator</a></li>
+              <li><a href="HtaccessGenerator.html" class="sidebar-submenu-link">.htaccess Generator</a></li>
+              <li><a href="StructuredDataGenerator.html" class="sidebar-submenu-link">Structured Data Generator</a></li>
+              <li><a href="OGtagsGenerator.html" class="sidebar-submenu-link">OG Tags Generator</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Converters</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+         <li><a href="Mp4toMp3.html" class="sidebar-submenu-link">MP4 to MP3</a></li>
+              <li><a href="WordtoPdf.html" class="sidebar-submenu-link">word to PDF</a></li>
+              <li><a href="XmltoJson.html" class="sidebar-submenu-link">XML to JSON</a></li>
+              <li><a href="JsontoXml.html" class="sidebar-submenu-link">JSON to XML</a></li>
+
+                <li><a href="JsontoCsv.html" class="sidebar-submenu-link">JSON to CSV</a></li>
+              <li><a href="JsontoExcel.html" class="sidebar-submenu-link">JSON to Excel</a></li>
+              <li><a href="TexttoHtml.html" class="sidebar-submenu-link">Text to HTMl</a></li>
+              <li><a href="PpttoPdf.html" class="sidebar-submenu-link">Powerpoint to PDF</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Downloader</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu1" data-submenu>
+        <ul class="sidebar-submenu-list1 sidebar-submenu1-grid3">
+          <li><a href="InstaReels.html" class="sidebar-submenu-link1">Instagram Reels Downloader</a></li>
+              <li><a href="YoutubeVideoDownloader.html" class="sidebar-submenu-link1">Youtube Videos Downloader</a></li>
+              <li><a href="InstaPost.html" class="sidebar-submenu-link1">Instagram Post Downloader</a></li>
+        </ul>
+      </div>
+      </div>
+
+<div class="sidebar-menu" data-menu>
+       <button class="sidebar-menu-btn" type="button">
+        <span>Minifier</span>
+        <svg class="sidebar-menu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <div class="sidebar-submenu" data-submenu>
+        <ul class="sidebar-submenu-list sidebar-submenu-grid2">
+           <li><a href="Htmlminifier.html" class="sidebar-submenu-link">HTML Minifier</a></li>
+              <li><a href="Cssminifier.html" class="sidebar-submenu-link">CSS Minifier</a></li>
+              <li><a href="JsMinifier.html" class="sidebar-submenu-link">JS Minifier</a></li>
+              <li><a href="HtmlUnminifier.html" class="sidebar-submenu-link">HTML Unminifier</a></li>
+               <li><a href="Cssunminifier.html" class="sidebar-submenu-link">CSS Unminifier</a></li>
+              <li><a href="JsUnminifier.html" class="sidebar-submenu-link">JS Unminifier</a></li>
+        </ul>
+      </div>
+      </div>
+
+  </nav>
+</aside>
+    <!-- Main Content -->
+    <main class="main-content1">
+    
+   <div class="tool-card1">
+<div class="tool-header1">
+    <h2 class="font-bold text-3xl mb-2 text-green-700">Upscale Image Files</h2>
+    <p class="text-gray-500">
+      Select one or more images (JPG, PNG, WebP) and upscale them in your browser. No upload required!
+    </p>
+  </div>
+
+  <div x-data="upscaleImageTool()" class="w-full">
+    <div
+      class="drop-area1 mb-4"
+      :class="{ active: isDragging }"
+      @dragover.prevent="isDragging = true"
+      @dragleave.prevent="isDragging = false"
+      @drop.prevent="handleDrop($event)"
+    >
+    <div class="flex flex-col items-center justify-center">
+                <span class="emoji-icon">⬆️</span> 
+                <span class="text-gray-500" x-text="isDragging ? 'Drop images here...' : 'Drag & drop images here'"></span>
+            </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-2 mb-4">
+      <template x-if="!hasBrowsed">
+        <button
+          class="butn"
+          type="button"
+          @click="hasBrowsed = true; $refs.fileInput.click()"
+        >
+          📁 Browse Files
+        </button>
+      </template>
+      <template x-if="hasBrowsed">
+        <button
+          class="butn-5"
+          type="button"
+          @click="$refs.fileInput.click()"
+        >
+            <img src="./assets/img/Add-sign.png" height="auto" width="11.5px"> Add More Files
+        </button>
+      </template>
+    </div>
+
+    <input
+      type="file"
+      accept="image/jpeg, image/png, image/webp"
+      multiple
+      class="hidden"
+      x-ref="fileInput"
+      @change="handleFiles($event)"
+    />
+
+    <template x-if="files.length">
+      <ul class="file-list mb-4">
+        <template x-for="(file, idx) in files" :key="idx">
+          <li class="file-item flex justify-between items-center">
+            <span x-text="file.name"></span>
+            <button
+              class="text-red-500 hover:text-red-700 ml-2"
+              @click="removeFile(idx)"
+            >
+              ✕
+            </button>
+          </li>
+        </template>
+      </ul>
+    </template>
+
+    <template x-if="files.length">
+      <button
+        class="butn"
+        :disabled="upscaling"
+        @click="upscaleImages"
+        x-text="upscaling ? 'Upscaling...' : 'Upscale Images'"
+      ></button>
+    </template>
+
+    <template x-if="upscaledFiles.length">
+      <div class="mt-6 space-y-4">
+        <template x-for="(cf, idx) in upscaledFiles" :key="idx">
+          <div class="p-3 border border-gray-200 rounded-md bg-gray-50">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <span class="font-medium text-gray-800 truncate" x-text="cf.name"></span>
+                <a
+                    :href="cf.url"
+                    :download="cf.name"
+                    class="btn btn-cloud text-sm py-1.5 px-3 self-start sm:self-center"
+                >
+                    <i class="fas fa-download mr-1.5"></i> Download
+                </a>
+            </div>
+            <div class="text-sm text-gray-600 mt-2">
+                <span x-text="'Upscaled: ' + formatSize(cf.upscaledSize)"></span>
+                <span x-text="' | Original: ' + formatSize(cf.originalSize)"></span>
+                <span x-text="' | Scale: 2x'"></span>
+            </div>
+          </div>
+        </template>
+        <template x-if="upscaledFiles.length > 1">
+          <div class="mt-4 flex justify-center">
+            <button class="btn btn-cloud" @click="downloadZip()">
+              <i class="fas fa-file-archive mr-1.5"></i> Download All as ZIP
+            </button>
+          </div>
+        </template>
+      </div>
+    </template>
+
+    <template x-if="error">
+      <div class="mt-4 text-red-600 text-sm" x-text="error"></div>
+    </template>
+  </div>
+</div>
+
+<div class="tool-footer">
+  <div class="footer-buttons">
+    <a href="Compressimage.html" class="footer-btn"> Compress Image </a>
+    <a href="Resizeimage.html" class="footer-btn"> Resize Image </a>
+    <a href="Cropimage.html" class="footer-btn"> Crop Image</a>
+    <a href="ConverttoJPG.html" class="footer-btn"> Convert to JPG</a>
+    <a href="JPGtoPDF.html" class="footer-btn"> JPG to PDF</a>
+    <a href="JPGtoPNG.html" class="footer-btn"> JPG to PNG</a>
+    <a href="RotateImage.html" class="footer-btn"> Rotate Image</a>
+    <a href="HtmltoImage.html" class="footer-btn"> HTML to Image</a>
+    <a href="WatermarkRemoverImage.html" class="footer-btn"> Watermark Image</a>
+    <a href="Blurimage.html" class="footer-btn"> Blur Image</a>
+    <a href="PhotoEditor.html" class="footer-btn"> Photo Editor</a>
+    <a href="Bgremove.html" class="footer-btn"> Remove Background</a>
+    <a href="MemeGenerator.html" class="footer-btn"> Meme Generator</a>
+  </div>
+</div>
+
+<script>
+document.addEventListener('alpine:init', () => {
+    Alpine.data('upscaleImageTool', () => ({
+        files: [],
+        upscaledFiles: [],
+        upscaling: false,
+        error: '',
+        isDragging: false,
+        hasBrowsed: false,
+
+        handleFiles(event) {
+            this.error = '';
+            // Clear previous upscaled files if new files are added
+            this.upscaledFiles = [];
+            let newFiles = [];
+            if (event.target && event.target.files) {
+                newFiles = Array.from(event.target.files);
+            } else if (event.dataTransfer && event.dataTransfer.files) {
+                newFiles = Array.from(event.dataTransfer.files);
+            }
+
+            // Filter for supported image types and unique files
+            newFiles = newFiles.filter(
+                (f) =>
+                    (/^image\/(jpeg|png|webp)$/.test(f.type)) &&
+                    !this.files.some(
+                        (existing) => existing.name === f.name && existing.size === f.size
+                    )
+            );
+
+            if (newFiles.length < (event.target?.files.length || event.dataTransfer?.files.length || 0)) {
+                this.error = "Some selected files were not JPG, PNG, or WebP and were ignored.";
+            }
+
+            this.files = this.files.concat(newFiles);
+            this.hasBrowsed = true; // Indicate that files have been browsed/dropped
+            if (event.target) event.target.value = ''; // Clear input for next selection
+            this.isDragging = false; // Reset drag state
+        },
+
+        handleDrop(event) {
+            this.handleFiles(event);
+            this.isDragging = false;
+        },
+
+        removeFile(idx) {
+            this.files.splice(idx, 1);
+            this.error = '';
+            // Clear upscaled files if the source list changes
+            this.upscaledFiles = [];
+            if (this.files.length === 0) {
+                this.hasBrowsed = false; // Reset hasBrowsed if all files are removed
+            }
+        },
+
+        async upscaleImages() {
+            if (!this.files.length) {
+                this.error = 'Please select at least one image file.';
+                return;
+            }
+            this.error = '';
+            this.upscaling = true;
+            this.upscaledFiles = []; // Clear previous upscaled results
+
+            try {
+                for (const file of this.files) {
+                    const upscaled = await this.upscaleImageFile(file, 2); // 2x upscale
+                    this.upscaledFiles.push(upscaled);
+                }
+            } catch (e) {
+                console.error("Error during image upscaling:", e);
+                this.error = 'Failed to upscale images. ' + (e.message || 'An unknown error occurred.');
+            } finally {
+                this.upscaling = false;
+            }
+        },
+
+        // Upscale image using canvas
+        // Note: This is a simple nearest-neighbor scaling. For high-quality
+        // upscaling, more advanced algorithms or external libraries would be needed.
+        async upscaleImageFile(file, scale = 2) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const img = new Image();
+                    img.onload = function () {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = img.width * scale;
+                        canvas.height = img.height * scale;
+                        const ctx = canvas.getContext('2d');
+
+                        // Set imageSmoothingEnabled to false for a "pixelated" or "blocky" upscale
+                        // which is good for pixel art. For smoother results (but potentially blurry),
+                        // set it to true (default) or don't set it.
+                        // ctx.imageSmoothingEnabled = false; // Uncomment for pixel-perfect scaling
+
+                        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                        // Determine output type: if original is PNG, output PNG. Otherwise, JPG.
+                        // WebP can be converted to PNG or JPG.
+                        let outputType = 'image/jpeg'; // Default to JPG
+                        let outputExtension = 'jpg';
+                        if (file.type === 'image/png') {
+                            outputType = 'image/png';
+                            outputExtension = 'png';
+                        } else if (file.type === 'image/webp' && canvas.toDataURL('image/webp').startsWith('data:image/webp')) {
+                            // If browser supports webp output, can keep it
+                            outputType = 'image/webp';
+                            outputExtension = 'webp';
+                        }
+
+                        // Use a specific quality for JPEG output (0-1)
+                        const jpegQuality = 0.95;
+
+                        canvas.toBlob(
+                            function (blob) {
+                                if (blob) {
+                                    const originalFileName = file.name.split('.').slice(0, -1).join('.'); // Get name without original extension
+                                    const name = `${originalFileName}-upscaled.${outputExtension}`;
+                                    resolve({
+                                        url: URL.createObjectURL(blob),
+                                        name,
+                                        blob, // Keep the blob for ZIP download
+                                        originalSize: file.size,
+                                        upscaledSize: blob.size,
+                                    });
+                                } else {
+                                    reject(new Error('Failed to create Blob from canvas.'));
+                                }
+                            },
+                            outputType,
+                            outputType === 'image/jpeg' ? jpegQuality : undefined
+                        );
+                    };
+                    img.onerror = () => reject(new Error(`Failed to load image: ${file.name}`));
+                    img.src = e.target.result;
+                };
+                reader.onerror = () => reject(new Error(`Failed to read file: ${file.name}`));
+                reader.readAsDataURL(file);
+            });
+        },
+
+        formatSize(bytes) {
+            if (bytes < 1024) return bytes + ' B';
+            else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+            else return (bytes / 1048576).toFixed(1) + ' MB';
+        },
+
+        async downloadZip() {
+            if (this.upscaledFiles.length < 2) {
+                this.error = 'Add more than one upscaled image to download as ZIP.';
+                return;
+            }
+            try {
+                const zip = new JSZip();
+                this.upscaledFiles.forEach((file) => {
+                    zip.file(file.name, file.blob); // Add blob to zip
+                });
+                const content = await zip.generateAsync({ type: 'blob' });
+                const url = URL.createObjectURL(content);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'upscaled-images.zip';
+                document.body.appendChild(a);
+                a.click();
+                setTimeout(() => {
+                    URL.revokeObjectURL(url);
+                    a.remove();
+                }, 1500);
+            } catch (e) {
+                console.error("Error zipping files:", e);
+                this.error = 'Failed to create ZIP file. ' + (e.message || 'An unknown error occurred.');
+            }
+        },
+    }));
+});
+
+document.querySelectorAll('.sidebar-menu').forEach(menu => {
+  let timeout;
+  menu.addEventListener('mouseenter', () => {
+    clearTimeout(timeout);
+    menu.classList.add('open');
+  });
+  menu.addEventListener('mouseleave', () => {
+    timeout = setTimeout(() => menu.classList.remove('open'), 150);
+  });
+});
+</script>
+
+    </main>
+  </div>
+</body>
+</html>
